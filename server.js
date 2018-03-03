@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 
+const port = process.env.PORT || 4200;
+
 var app = new express();
 
 
@@ -11,5 +13,5 @@ app.get('/', (req, res) => {
 });
 
 
-console.log ("app is up at 4200.");
-app.listen(4200);
+console.log (`app is up at ${port}.`);
+app.listen(port);

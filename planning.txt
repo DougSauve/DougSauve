@@ -1,0 +1,32 @@
+Blog
+
+About
+  Hire Doug
+
+  About Doug
+    personal
+    professional
+
+
+What I can do
+
+
+[for each entry, tools used in each one, date I made it, and an estimate of the time it would take me to make something similar.]
+
+  websites
+    (This one)
+    OWF
+    website paired with app
+    Chapman Woodworking
+
+  apps
+    mileage tracker
+    messaging app
+    app paired with website
+
+  games
+    Bounce
+    Ice Mazes
+    Wilderness (ongoing, probably)
+
+    list of skills link

@@ -1,0 +1,110 @@
+Something I've personally struggled a lot with is understanding closures. There are many articles and tutorials all over the internet saying how tricky they are to understand, how important it is to get them, and trying to make them clear. In this post I'd like to bring all of the useful bits and pieces I ran across in my wanderings and put them all together.
+
+There are a couple of things we need to understand before we can talk properly about closures. the first is scope. Scope pretty much means 'place', when you think of inside/outside of functions as different places (but not 'if/else/loop' blocks if you're using 'var' to declare variables!). Look at this:
+
+function Grandma() {
+
+  var breakfast = "prunes";
+
+  function Mother() {
+
+  var dessert = "Ice Cream";
+  var treat = "Muffins";
+
+    function Child() {
+
+    var food = "Pizza";
+    var treat = "Candy";
+
+    alert(food); //this will output Pizza
+    alert(dessert); //this will output Ice Cream
+    alert(breakfast); //this will output breakfast
+    alert(treat); //this will output Candy
+    }
+  }
+}
+
+Let's have a look at this:
+
+You can reach food ("pizza") from Child because food was declared inside Child. A function has access to variables declared inside it.
+
+You can reach dessert ("Ice Cream") from Child because dessert was declared in the 'parent' scope of Child (the scope that Child was created in).
+
+You can also reach breakfast ("prunes") from child because
+
+The last example is an interesting one. 'treat' is the name of a variable in Mother as well as Child. We can access both of those scopes.
+JavaScript looks first on the inside. Think - if I have a treat already, why do I need to go looking for a different one? This is what happened with 'food' - 'food' already exists inside Child, so there's no need to even look elsewhere for it. If JavaScript doesn't find a variable on the inside, then it looks outside (in the parent scope) - this is what happened with 'dessert'. Child didn't have any dessert, so we looked elsewhere. If there had been a variable named 'dessert' on the inside, JavaScript would have picked that one first and stopped looking. That is what it does with 'treat' - it finds candy and stops looking.
+
+What about scope going inward? Can a function reach a variable that's in a function inside it? Let's look at this example again, but fire our alerts from the Grandma scope:
+
+function Grandma() {
+
+  var breakfast = "prunes";
+
+  function Mother() {
+
+  var dessert = "Ice Cream";
+  var treat = "Muffins";
+
+    function Child() {
+
+    var food = "Pizza";
+    var treat = "Candy";
+    }
+  }
+
+  alert(food); //this will throw an error - not defined
+  alert(dessert); //this will throw an error - not defined
+  alert(breakfast); //this will output prunes
+  alert(treat); //this will throw an error - not defined
+}
+
+Evidently, a function can't access a variable defined in a scope within it.
+
+
+
+
+What is a closure?
+
+I'm going to start way off in left field with a story from Harry Potter, because that will make things much easier. Bear with me if you already know all of this.
+
+When Harry Potter was a baby, his parents (Lily and James Potter) were being hunted by this evil dark wizard guy named Voldemort who wanted to murder them. But the Potters were friends with a powerful good wizard named Dumbledore, who Voldemort was afraid of. Dumbledore knew that Voldemort would eventually find the Potters if he didn't do something about it, so he suggested using the Fidelius Charm, and making himself their secret-keeper. This meant that no one would ever be able to find the Potters unless Dumbledore himself told them where they were - they would be completely safe from Voldemort.
+
+If you've read the story you know that their cover got blown anyway, but that's as much of the story as we need to talk about closures.
+
+Closures are like the Fidelius Charm. You declare a variable that you want to protect within a function, and then what you do with the rest of that guarantees that the only way anyone can access that variable is by going through the function. We'll talk about in depth shortly.
+
+Consider this snippet of code:
+
+var protectedPeople = "Some Random People";
+
+var fideliusCharm = (function() {
+  var protectedPeople = "Potters";
+
+  var secretKeeper = function() {
+    return protectedPeople;
+  };
+
+  return secretKeeper;
+})();
+
+Okay. Let's get into what's going on here.
+
+On line 1, we set fideliusCharm's value to a function. Three things happen within this function:
+
+First, we declare protectedPeople; this is the variable that is going to be protected.
+
+Second, we declare a second function within the fideliusCharm function.
+Something very important to understand here is how lexical scope works in JavaScript: a function  has access to any variables within itself, and also any variable in its 'parent', but no higher than that. For example, secretKeeper would have access to any variables inside itself, if we had declared any; it also has access to all of the variables within fideliusCharm, because secretKeeper exists inside fideliusCharm.  secretKeeper doesn't have access to variables outside of fideliusCharm - well, except in certain circumstances that we aren't going to talk about here, but I will write about that later on.
+So secretKeeper can access protectedPeople because protectedPeople exists in secretKeeper's 'parent' scope(the fideliusCharm function, in this case).
+
+Third, we return secretKeeper. Kind of a weird move, but it's what seals the deal. Notice that we return secretKeepr, not secretKeeper()!!! returning secretKeeper returns the function itself - returning secretKeepr() would execute the function and return the result. We don't want to return the result - we want to return the function before it is executed.
+If we return secretKeeper, what we are returning is " function() { return protectedPeople; }; ".
+If we return secretKeeper(), what we are returning is " Potters ".
+
+
+So why does that matter? And where are we returning it to, anyway?
+
+We're returning it to fideliusCharm.
+
+What this does is set the value of fideliusCharm - the whole function we're working in - to the function currently stored in the secretKeeper variable. This value is a function that returns protectedPeople (which contains Potters), not just 'Potters'.

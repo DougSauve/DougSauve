@@ -3,15 +3,29 @@ const path = require('path');
 
 const port = process.env.PORT || 4200;
 
-var app = new express();
+const app = new express();
+app.use('/', express.static(__dirname + "/public"));
 
 
-app.set('view engine', 'html');
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + "/public/index.html"));
-});
-
+//
+// app.use('/images', express.static('images'));
+// app.use('/stylesheets', express.static('public/stylesheets'))
+//
+// app.set('view engine', 'html');
+//
+// app.get('/blog', (req, res) => {
+//   res.sendFile(path.join(__dirname + "/public/blog/blog.html"));
+// })
 
 console.log (`app is up at ${port}.`);
 app.listen(port);
+
+
+  // dynamic file map:
+  //
+  // /
+  // /blog
+  //
+  // F images/
+  //
+  // F stylesheets/

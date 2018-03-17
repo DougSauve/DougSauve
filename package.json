@@ -1,15 +1,26 @@
 {
   "name": "dougsauve",
   "version": "1.0.0",
-  "description": "DougSauve.com website",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DougSauve/DougSauve.git"
+  },
   "author": "Doug Sauve",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "bugs": {
+    "url": "https://github.com/DougSauve/DougSauve/issues"
+  },
+  "homepage": "https://github.com/DougSauve/DougSauve#readme"
 }

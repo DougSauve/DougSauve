@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><body><script>
+
+const ageLimit = 18;
+const name = "Jim";
+const thing; //this will throw an error because const can't be redefined. This technically isn't causing a problem here, but this variable is completely useless because it doesn't have a value and can't be assigned one later. You have to assign a const variable a value when you declare it.
+var fruit = "apple";
+//const fruit = "pear"; /this will throw an error, since fruit can't be two different variables, even if they are declared different ways
+let fruit = "mango"; //this also throws an error for the same reason
+
+
+for (let a = 0; a < 10; a++) {
+  const name = "Joe"; //you can do this since 'name' was declared above in a different scope. You aren't reassigning the name variable here; you're making a completely new one. Inside this scope, JavaScript looks for the variable name in here first, and finds it. If it didn't find it, it would look outside and find the one named Jim, which is a completely different variable because it's in a different scope. This is why Jim doesn't get affect by declaring name as 'Joe'  inside this loop.
+}
+
+//ageLimit = 16; //this will throw an error
+//var ageLimit = 20; //this will also throw an error
+fruit = "banana"; //no problem
+
+alert (name); //Jim
+alert (ageLimit); //18
+alert (fruit); //banana
+//alert (a); //undefined, since a was defined with 'let' and doesn't exist outside the for loop.
+
+
+
+</script></body></html>

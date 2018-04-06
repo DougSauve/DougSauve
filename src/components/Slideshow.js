@@ -63,3 +63,4 @@ export default class Slideshow extends React.Component {
 }
 
 //slow transitions, pause the slideshow when someone is hovering over caption.
+//adding a line here to see if this makes a diference on Heroku

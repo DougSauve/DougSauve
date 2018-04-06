@@ -10,18 +10,18 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className = "nav-bar">
+        <h1>Hi, I'm Doug. I create web apps.</h1>
         {
           /* eslint-disable */
-          //want to get this.props.dests and turn each one into a button/link.
-          //implicitly returning the changed array...
           this.props.dests.map((dest) => {
-            return <button
+            return <div
+              className = "button"
               key = {dest[0]}
               onClick = {this.sendTo.bind(this, dest[1])}
             >
               {dest[0]}
-            </button>
+            </div>
           })
         }
       </div>

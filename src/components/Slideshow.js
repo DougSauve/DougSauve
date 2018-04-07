@@ -35,6 +35,7 @@ export default class Slideshow extends React.Component {
           const buttonText = this.props.slides[count][2];
           const buttonHref = this.props.slides[count][3];
 
+          //actual changes here. Set left/right. start left: if showing left, set right to the new one, then in .2 seconds fade left out to transparent. If showing right, set left to new, then in .2 seconds fade right out to transparent.
           this.setState(() => ({
             count,
             slide,
@@ -81,4 +82,3 @@ export default class Slideshow extends React.Component {
 
 //Still need:
 //crossfading
-//pause slideshow on hover over caption div

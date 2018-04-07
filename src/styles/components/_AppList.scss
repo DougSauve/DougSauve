@@ -12,6 +12,9 @@
   width: 95%;
   justify-content: center;
 }
+.project:hover {
+  cursor: pointer;
+}
 .project > img {
   top: inherit;
   height: 100%;

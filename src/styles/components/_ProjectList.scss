@@ -1,0 +1,33 @@
+
+.projects {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.project {
+  position: relative;
+  height: 35rem;
+  width: 95%;
+  justify-content: center;
+}
+.project > img {
+  top: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 4px black;
+  margin-bottom: 2rem;
+  border: 1px black solid;
+}
+.projects__title {
+  position: absolute;
+  top: inherit;
+  z-index: 1;
+  padding: 2rem;
+  color: $cream;
+  text-shadow: 0 2px 2px $dark;
+  font-weight: 600;
+  font-size: 4rem;
+}

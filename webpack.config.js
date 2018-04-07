@@ -32,6 +32,7 @@ module.exports = {
   devtool: `source-map`,
   devServer: {
     contentBase: __dirname + '/public',
-    port: 4201
+    port: 4201,
+    historyApiFallback: true
   }
 };

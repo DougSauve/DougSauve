@@ -1,0 +1,11 @@
+.header {
+  position: fixed;
+  margin: 0 0 0 20%;
+  color: purple;
+  font-size: 3.4rem;
+  font-style: italic;
+  font-weight: 700;
+  padding-left: $s-size;
+  text-shadow: 0 0 3px $cream;
+  flex-grow: 1;
+}

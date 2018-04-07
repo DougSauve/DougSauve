@@ -27,8 +27,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "webpack-dev-server --mode development --watch",
+    "dev": "node server.js",
+    "start": "webpack-dev-server --mode development --watch",
     "build": "webpack",
     "postinstall": "webpack"
   },

@@ -102,7 +102,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  background: white;\n  font-family: Times, serif;\n  font-size: 2.4rem; }\n\n.nav-bar {\n  display: flex;\n  justify-content: flex-end;\n  height: 3.2rem;\n  background: transparent;\n  line-height: 3.2rem;\n  padding-right: 2px; }\n\n.nav-bar > h1 {\n  text-align: center;\n  margin: 0;\n  color: white;\n  font-size: 3.4rem;\n  font-style: italic;\n  font-weight: 700;\n  padding-left: 1.6rem;\n  text-shadow: 0 0 3px #112233;\n  flex-grow: 1; }\n\n.current-location {\n  color: transparent;\n  background: red;\n  height: 0.1rem;\n  box-shadow: 1px 0 4px red; }\n\n.button {\n  color: #ffffcc;\n  font-size: 2rem;\n  border-left: 1px solid #ffffcc;\n  box-shadow: 1px 0 4px #ffffcc;\n  background: transparent;\n  padding: 0 1.2rem; }\n\n.button:hover {\n  background: rgba(250, 250, 250, 0.1);\n  cursor: pointer; }\n\n.slideshow {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  background: grey;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n.slideshow > img {\n  object-fit: cover; }\n\n.caption {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  bottom: 20%;\n  left: 0;\n  right: 0;\n  font-weight: 600;\n  margin: auto;\n  width: 60rem;\n  height: 15rem;\n  background: transparent;\n  border-radius: 1rem;\n  text-align: center;\n  text-shadow: -2px 2px 2px #ffffcc, 2px -2px 2px #ffffcc, -2px -2px 2px #ffffcc, 2px 2px 2px #ffffcc;\n  color: #112233; }\n\n.caption__button {\n  padding: 1rem;\n  background: #111199;\n  border: 1px solid #112233;\n  border-radius: 3rem;\n  color: white;\n  box-shadow: 0 2px 2px grey;\n  margin: auto; }\n\n.caption__button:hover {\n  cursor: pointer;\n  box-shadow: none;\n  background: #1616c7; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  background: #ffffcc;\n  font-family: Times, serif;\n  font-size: 2.4rem; }\n\n.header {\n  position: fixed;\n  margin: 0 0 0 20%;\n  color: purple;\n  font-size: 3.4rem;\n  font-style: italic;\n  font-weight: 700;\n  padding-left: 1.6rem;\n  text-shadow: 0 0 3px #ffffcc;\n  flex-grow: 1; }\n\n.nav-bar {\n  display: flex;\n  justify-content: flex-end;\n  height: 3.2rem;\n  background: transparent;\n  line-height: 3.2rem;\n  padding-right: 2px; }\n\n.current-location {\n  color: transparent;\n  background: purple;\n  height: 0.2rem;\n  box-shadow: 1px 0 4px #b300b3; }\n\n.button {\n  color: #ffffcc;\n  font-size: 2rem;\n  border-left: 1px solid #ffffcc;\n  box-shadow: 1px 0 4px #ffffcc;\n  background: transparent;\n  padding: 0 1.2rem; }\n\n.button:hover {\n  background: rgba(250, 250, 250, 0.1);\n  color: purple;\n  font-weight: 500;\n  cursor: pointer; }\n\n.slideshow {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  background: #ffffcc;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n.slideshow > img {\n  object-fit: cover;\n  opacity: 0.5; }\n\n.caption {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  bottom: 20%;\n  left: 0;\n  right: 0;\n  font-weight: 600;\n  margin: auto;\n  width: 60rem;\n  height: 15rem;\n  background: transparent;\n  border-radius: 1rem;\n  text-align: center;\n  text-shadow: -2px 2px 2px #ffffcc, 2px -2px 2px #ffffcc, -2px -2px 2px #ffffcc, 2px 2px 2px #ffffcc;\n  color: #112233; }\n\n.caption__button {\n  padding: 1rem;\n  background: #111199;\n  border: 1px solid #112233;\n  border-radius: 3rem;\n  color: white;\n  box-shadow: 0 2px 2px grey;\n  margin: auto; }\n\n.caption__button:hover {\n  cursor: pointer;\n  box-shadow: none;\n  background: #1616c7; }\n\n.projects {\n  margin-top: 15rem;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: center; }\n\n.project {\n  position: relative;\n  height: 35rem;\n  width: 95%;\n  justify-content: center; }\n\n.project > img {\n  top: inherit;\n  height: 100%;\n  width: 100%;\n  object-fit: cover;\n  box-shadow: 0 4px 4px black;\n  margin-bottom: 2rem;\n  border: 1px black solid; }\n\n.projects__title {\n  position: absolute;\n  top: inherit;\n  z-index: 1;\n  padding: 2rem;\n  color: #ffffcc;\n  text-shadow: 0 2px 2px #112233;\n  font-weight: 600;\n  font-size: 4rem; }\n", ""]);
 
 // exports
 
@@ -19731,11 +19731,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   </BrowserRouter>
 // )
 //
-if (window.location.pathname === '/') {
-  _reactDom.default.render(_react.default.createElement(_index.default, null), document.getElementById('app'));
-} else if (window.location.pathname === '/projects') {
-  _reactDom.default.render(_react.default.createElement(_index.default, null), document.getElementById('app'));
+switch (window.location.pathname) {
+  case '/':
+    _reactDom.default.render(_react.default.createElement(_index.default, null), document.getElementById('app'));
+
+    break;
+
+  case '/projects':
+    _reactDom.default.render(_react.default.createElement(_projects.default, null), document.getElementById('app'));
+
+    break;
 }
+
+/***/ }),
+
+/***/ "./src/components/Header.js":
+/*!**********************************!*\
+  !*** ./src/components/Header.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header(props) {
+  return _react.default.createElement("h1", {
+    className: "header"
+  }, props.content);
+};
+
+exports.default = Header;
 
 /***/ }),
 
@@ -19799,13 +19834,35 @@ function (_React$Component) {
       }
     }
   }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var buttons = document.getElementsByClassName('nav-bar')[0].childNodes;
+      var color = this.props.color;
+
+      if (this.props.color) {
+        buttons.forEach(function (button) {
+          button.style.color = color;
+          button.style.borderLeftColor = color;
+          button.style.boxShadow = "1px 0 4px " + color;
+
+          button.onmouseenter = function () {
+            button.style.color = "purple";
+          };
+
+          button.onmouseleave = function () {
+            button.style.color = color;
+          };
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this = this;
 
       return _react.default.createElement("div", {
         className: "nav-bar"
-      }, _react.default.createElement("h1", null, "Hi, I'm Doug. I create web apps."),
+      },
       /* eslint-disable */
       this.props.dests.map(function (dest) {
         return _react.default.createElement("div", {
@@ -19821,6 +19878,42 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = NavBar;
+
+/***/ }),
+
+/***/ "./src/components/ProjectList.js":
+/*!***************************************!*\
+  !*** ./src/components/ProjectList.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProjectList = function ProjectList() {
+  return _react.default.createElement("div", null, _react.default.createElement("div", {
+    className: "projects"
+  }, _react.default.createElement("div", {
+    className: "project"
+  }, _react.default.createElement("div", {
+    className: "projects__title"
+  }, "The Fishing Game"), _react.default.createElement("img", {
+    src: "./images/FishingGame.png",
+    alt: "A screenshot of Doug Sauve's Fishing Game."
+  }))));
+};
+
+exports.default = ProjectList;
 
 /***/ }),
 
@@ -19881,7 +19974,9 @@ function (_React$Component) {
         slide: _this.props.slides[0][0],
         caption: _this.props.slides[0][1],
         buttonText: _this.props.slides[0][2],
-        buttonHref: _this.props.slides[0][3]
+        buttonHref: _this.props.slides[0][3],
+        pauseSlideshow: false,
+        slideshowInstanceIsRunning: false
       }
     }), Object.defineProperty(_assertThisInitialized(_this), "sendTo", {
       enumerable: true,
@@ -19893,32 +19988,44 @@ function (_React$Component) {
       enumerable: true,
       writable: true,
       value: function value() {
-        var maxCount = _this.props.slides.length;
-        var count = _this.state.count;
-        if (count < maxCount) count++;
-        if (count === maxCount) count = 0;
-        var slide = _this.props.slides[count][0];
-        var caption = _this.props.slides[count][1];
-        var buttonText = _this.props.slides[count][2];
-        var buttonHref = _this.props.slides[count][3];
+        if (_this.state.slideshowInstanceIsRunning !== true) {
+          _this.setState(function () {
+            return {
+              slideshowInstanceIsRunning: true
+            };
+          });
 
-        _this.setState(function () {
-          return {
-            count: count,
-            slide: slide,
-            caption: caption,
-            buttonText: buttonText,
-            buttonHref: buttonHref
-          };
-        });
-      }
-    }), Object.defineProperty(_assertThisInitialized(_this), "renderSlideshow", {
-      enumerable: true,
-      writable: true,
-      value: function value() {
-        setInterval(_this.changeSlide(), 5000);
+          setTimeout(function () {
+            if (_this.state.pauseSlideshow !== true) {
+              var maxCount = _this.props.slides.length;
+              var count = _this.state.count;
+              if (count < maxCount) count++;
+              if (count === maxCount) count = 0;
+              var slide = _this.props.slides[count][0];
+              var caption = _this.props.slides[count][1];
+              var buttonText = _this.props.slides[count][2];
+              var buttonHref = _this.props.slides[count][3];
 
-        _this.changeSlide();
+              _this.setState(function () {
+                return {
+                  count: count,
+                  slide: slide,
+                  caption: caption,
+                  buttonText: buttonText,
+                  buttonHref: buttonHref
+                };
+              });
+
+              setTimeout(_this.changeSlide, 0);
+            }
+
+            _this.setState(function () {
+              return {
+                slideshowInstanceIsRunning: false
+              };
+            });
+          }, 3000);
+        }
       }
     }), _temp));
   }
@@ -19926,17 +20033,35 @@ function (_React$Component) {
   _createClass(Slideshow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      setInterval(this.changeSlide, 7500);
+      this.changeSlide();
     }
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "slideshow"
       }, _react.default.createElement("img", {
         src: this.state.slide
       }), _react.default.createElement("div", {
-        className: "caption"
+        className: "caption",
+        onMouseEnter: function onMouseEnter() {
+          _this2.setState(function () {
+            return {
+              pauseSlideshow: true
+            };
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          _this2.setState(function () {
+            return {
+              pauseSlideshow: false
+            };
+          });
+
+          setTimeout(_this2.changeSlide, 0);
+        }
       }, _react.default.createElement("p", null, this.state.caption), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "caption__button",
         onClick: this.sendTo.bind(this, this.state.buttonHref)
@@ -19945,8 +20070,9 @@ function (_React$Component) {
   }]);
 
   return Slideshow;
-}(_react.default.Component); //slow transitions, pause the slideshow when someone is hovering over caption.
-//adding a line here to see if this makes a diference on Heroku
+}(_react.default.Component); //Still need:
+//crossfading
+//pause slideshow on hover over caption div
 
 
 exports.default = Slideshow;
@@ -19970,6 +20096,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var _Header = _interopRequireDefault(__webpack_require__(/*! ../components/Header */ "./src/components/Header.js"));
+
 var _NavBar = _interopRequireDefault(__webpack_require__(/*! ../components/NavBar */ "./src/components/NavBar.js"));
 
 var _Slideshow = _interopRequireDefault(__webpack_require__(/*! ../components/Slideshow */ "./src/components/Slideshow.js"));
@@ -19977,10 +20105,12 @@ var _Slideshow = _interopRequireDefault(__webpack_require__(/*! ../components/Sl
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Index = function Index() {
-  return _react.default.createElement("div", null, _react.default.createElement(_NavBar.default, {
+  return _react.default.createElement("div", null, _react.default.createElement(_Header.default, {
+    content: 'Hi, I\'m Doug. I create web apps.'
+  }), _react.default.createElement(_NavBar.default, {
     dests: [['Home', '/'], ['My work', '/projects'], ['Hire me', '/hire.js'], ['Blog', '/blog.js']]
   }), _react.default.createElement(_Slideshow.default, {
-    slides: [['./images/1.jpg', 'Come and have a look at what I can do.', 'See my work', './projects'], ['./images/2.jpg', 'Want my help with a project?', 'Get in touch', './hire'], ['./images/3.jpg', 'See what\'s new on my blog.', 'Go', './blog']]
+    slides: [['./images/1.jpg', 'Come and have a look at what I can do.', 'See my work', './projects'], ['./images/2.jpg', 'See what\'s new on my blog.', 'Go', './blog'], ['./images/3.jpg', 'Want my help with a project?', 'Get in touch', './hire']]
   }));
 }; // 'Hi there. My name is Doug, and I build web apps.(about)',
 // 'Take a look at what I can do. (wICD)',
@@ -20000,8 +20130,33 @@ exports.default = Index;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-//alert("hey dude!");
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Header = _interopRequireDefault(__webpack_require__(/*! ../components/Header */ "./src/components/Header.js"));
+
+var _NavBar = _interopRequireDefault(__webpack_require__(/*! ../components/NavBar */ "./src/components/NavBar.js"));
+
+var _ProjectList = _interopRequireDefault(__webpack_require__(/*! ../components/ProjectList */ "./src/components/ProjectList.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Projects = function Projects() {
+  return _react.default.createElement("div", null, _react.default.createElement(_NavBar.default, {
+    dests: [['Home', '/'], ['My work', '/projects'], ['Hire me', '/hire.js'], ['Blog', '/blog.js']],
+    color: '#112233'
+  }), _react.default.createElement(_Header.default, {
+    content: 'Here are some of my projects.'
+  }), _react.default.createElement(_ProjectList.default, null));
+};
+
+exports.default = Projects;
 
 /***/ }),
 

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 import Index from './pages/index';
 import Apps from './pages/apps';
+import Maintenance from './pages/maintenance';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
@@ -20,9 +21,9 @@ console.log('PATHNAME: ', window.location.pathname);
 if (window.location.pathname === '/') {
   ReactDOM.render(<Index />, document.getElementById('app'));
 }
-if (window.location.pathname === '/app') {
+else if (window.location.pathname === '/app') {
   ReactDOM.render(<Apps />, document.getElementById('app'));
 }
 else {
-  console.log('404');
+  ReactDOM.render(<Maintenance />, document.getElementById('app'));
 }

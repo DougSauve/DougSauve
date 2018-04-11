@@ -1,0 +1,61 @@
+.slide {
+  position: absolute;
+  background: white;
+  height: 100vh;
+}
+
+.slide__image {
+  opacity: 0.5;
+  object-fit: cover;
+  max-width: 100%;
+}
+.slide__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0; bottom: 20%; left: 0; right: 0;
+  font-weight: 600;
+  margin: auto;
+  width: 60rem;
+  height: 15rem;
+  background: transparent;
+  border-radius: 1rem;
+  text-align: center;
+  text-shadow: -2px 2px 2px $cream, 2px -2px 2px $cream, -2px -2px 2px $cream, 2px 2px 2px $cream;
+  color: #112233;
+}
+
+.slide__caption__button {
+  padding: 1rem;
+  background: purple;
+  border: 1px solid #112233;
+  border-radius: 3rem;
+  color: white;
+  box-shadow: 0 2px 2px grey;
+  margin: auto;
+}
+.slide__caption__button:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background: lighten(purple, 10%);
+}
+.chooser {
+  display: flex;
+  justify-content: center;
+}
+.chooser__button {
+  color: transparent;
+  width: .8rem;
+  height: .8rem;
+  border: solid 1px $dark;
+  border-radius: 1rem;
+  background: lighten($dark, 10%);
+  text-shadow: none;
+  opacity: .4;
+  margin: 2rem .6rem;
+}
+.chooser__button:hover {
+  cursor: pointer;
+  background: lighten($dark, 40%);
+}

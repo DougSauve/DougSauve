@@ -1,84 +1,106 @@
 import React from 'react';
 
+import SlideSlot from './SlideSlot';
+import Slide from './Slide';
+
 export default class Slideshow extends React.Component {
+
+  //variables
+  pauseSlideshow = false;
+  slideshowInstanceIsRunning = false;
+  count = 0;
+  slides = [];
+
   state = {
-    count: 0,
-    slide: this.props.slides[0][0],
-    caption: this.props.slides[0][1],
-    buttonText: this.props.slides[0][2],
-    buttonHref: this.props.slides[0][3],
-    pauseSlideshow: false,
-    slideshowInstanceIsRunning: false
+    slide1: undefined,
+    slide2: undefined,
   };
 
-  componentDidMount() {
-    this.changeSlide();
-  }
-  sendTo = (destination) => {
-    window.location.href = this.state.buttonHref;
-  }
 
   changeSlide = () => {
-    if (this.state.slideshowInstanceIsRunning !== true) {
-      this.setState(() => ({ slideshowInstanceIsRunning: true }));
+    if (this.slideshowInstanceIsRunning !== true) {
+      this.slideshowInstanceIsRunning = true;
+
       setTimeout(() => {
-        if (this.state.pauseSlideshow !== true) {
+        if (this.pauseSlideshow === false) {
 
-          const maxCount = this.props.slides.length;
-          let count = this.state.count;
+          const maxCount = this.slides.length;
 
-          if (count < maxCount) count++;
-          if (count === maxCount) count = 0;
+          if (this.count < maxCount) this.count++;
+          if (this.count === maxCount) this.count = 0;
 
-          const slide = this.props.slides[count][0];
-          const caption = this.props.slides[count][1];
-          const buttonText = this.props.slides[count][2];
-          const buttonHref = this.props.slides[count][3];
-
-          //actual changes here. Set left/right. start left: if showing left, set right to the new one, then in .2 seconds fade left out to transparent. If showing right, set left to new, then in .2 seconds fade right out to transparent.
-          this.setState(() => ({
-            count,
-            slide,
-            caption,
-            buttonText,
-            buttonHref,
+          this.setState((prevState) => ({
+            slide2: this.state.slide1
           }));
+          setTimeout(() => {
+            this.setState((prevState) => ({
+              slide1: this.slides[this.count]
+            }));
+          }, 2000);
+
 
           setTimeout(this.changeSlide, 0);
         }
-        this.setState(() => ({ slideshowInstanceIsRunning: false }));
-      }, 3000);
+        this.slideshowInstanceIsRunning = false;
+      }, 5000);
     }
   }
+  pausingSlideshow = () => {
+    this.pauseSlideshow = true;
+  }
+  unpausingSlideshow = () => {
+    this.pauseSlideshow = false;
+  }
+  goToSlide = (count) => {
+    //set page background to this image
+    document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = `url(${this.props.slides[this.count][0]})`;
+    this.setState(() => ({
+      slide1: this.slides[count],
+      slide2: this.slides[count]
+    }));
+    this.count = count;
+  }
 
+  componentDidMount() {
+    document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = `url(${this.props.slides[0][0]})`;
+    // create the array of slides:
+    this.props.slides.map((slide, index) => {
+      this.slides.push (
+        <Slide
+          slide = {this.props.slides[index][0]}
+          caption = {this.props.slides[index][1]}
+          buttonText = {this.props.slides[index][2]}
+          buttonHref = {this.props.slides[index][3]}
+          slidesLength = {this.props.slides.map((slide, index) => index)}
+          changeSlide = {this.changeSlide}
+          pausingSlideshow = {this.pausingSlideshow}
+          unpausingSlideshow = {this.unpausingSlideshow}
+          goToSlide = {this.goToSlide}
+        />
+      )
+    });
+
+    this.setState(() => ({
+      slide1: this.slides[0],
+      slide2: this.slides[0]
+    }));
+
+    setTimeout(this.changeSlide(), 0);
+  }
   render() {
     return (
-      <div>
-        <div className = "slideshow">
-          <img src = {this.state.slide}></img>
-          <div className = "caption"
-            onMouseEnter = {() => {
-              this.setState(() => ({ pauseSlideshow: true }));
-            }}
-            onMouseLeave = {() => {
-              this.setState(() => ({ pauseSlideshow: false }));
-              setTimeout(this.changeSlide, 0);
-            }}
-            >
-            <p>{this.state.caption}</p>
-              <br />
-            <button
-              className = "caption__button"
-              onClick = {this.sendTo.bind(this, this.state.buttonHref)}
-            >
-              {this.state.buttonText}
-            </button>
-          </div>
+      <div className = "slideshow">
+        <div className = "slideshow__background">
         </div>
+        <SlideSlot
+          slide = {this.state.slide2}
+          slotName = "slot2"
+        />
+        <SlideSlot
+          slide = {this.state.slide1}
+          slotName = "slot1"
+        />
       </div>
     );
   }
 }
-
-//Still need:
-//crossfading

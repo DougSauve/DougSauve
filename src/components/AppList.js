@@ -11,13 +11,13 @@ export default class ProjectList extends React.Component {
           title = "The Fishing Game"
           image = "/images/FishingGame.png"
           imageAlt = "A screenshot of Doug Sauve's Fishing Game."
-          href = "/apps/FishingGame"
+          href = "/projects/FishingGame/app.html"
         />
         <AppEntry
           title = "The Fishing Game"
           image = "/images/FishingGame.png"
           imageAlt = "A screenshot of Doug Sauve's Fishing Game."
-          href = "/apps/FishingGame"
+          href = "/projects/FishingGame/app.html"
         />
     </div>
     );

@@ -102,7 +102,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  background: #ffffcc;\n  font-family: Times, serif;\n  font-size: 2.4rem; }\n\n.header {\n  margin: 0 0 0 20%;\n  color: purple;\n  font-size: 3.4rem;\n  font-style: italic;\n  font-weight: 700;\n  padding-left: 1.6rem;\n  text-shadow: 0 0 3px #ffffcc;\n  flex-grow: 1; }\n\n.nav-bar {\n  display: flex;\n  justify-content: flex-end;\n  height: 3.2rem;\n  background: transparent;\n  line-height: 3.2rem;\n  padding-right: 2px; }\n\n.current-location {\n  color: transparent;\n  background: purple;\n  height: 0.2rem;\n  box-shadow: 1px 0 4px #b300b3; }\n\n.button {\n  color: #ffffcc;\n  font-size: 2rem;\n  border-left: 1px solid #ffffcc;\n  box-shadow: 1px 0 4px #ffffcc;\n  background: transparent;\n  padding: 0 1.2rem; }\n\n.button:hover {\n  background: rgba(250, 250, 250, 0.1);\n  color: purple;\n  font-weight: 500;\n  cursor: pointer; }\n\n.slideshow {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  background: #ffffcc;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n.slideshow > img {\n  object-fit: cover;\n  opacity: 0.5; }\n\n.caption {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  bottom: 20%;\n  left: 0;\n  right: 0;\n  font-weight: 600;\n  margin: auto;\n  width: 60rem;\n  height: 15rem;\n  background: transparent;\n  border-radius: 1rem;\n  text-align: center;\n  text-shadow: -2px 2px 2px #ffffcc, 2px -2px 2px #ffffcc, -2px -2px 2px #ffffcc, 2px 2px 2px #ffffcc;\n  color: #112233; }\n\n.caption__button {\n  padding: 1rem;\n  background: #111199;\n  border: 1px solid #112233;\n  border-radius: 3rem;\n  color: white;\n  box-shadow: 0 2px 2px grey;\n  margin: auto; }\n\n.caption__button:hover {\n  cursor: pointer;\n  box-shadow: none;\n  background: #1616c7; }\n\n.projects {\n  margin-top: 15rem;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: center; }\n\n.project {\n  position: relative;\n  height: 35rem;\n  width: 95%;\n  justify-content: center; }\n\n.project:hover {\n  cursor: pointer; }\n\n.project > img {\n  top: inherit;\n  height: 100%;\n  width: 100%;\n  object-fit: cover;\n  box-shadow: 0 4px 4px black;\n  margin-bottom: 2rem;\n  border: 1px black solid; }\n\n.projects__title {\n  position: absolute;\n  top: inherit;\n  z-index: 1;\n  padding: 2rem;\n  color: #ffffcc;\n  text-shadow: 0 2px 2px #112233;\n  font-weight: 600;\n  font-size: 4rem; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  background: #ffffcc;\n  font-family: Times, serif;\n  font-size: 2.4rem; }\n\n.header {\n  position: absolute;\n  margin: 0 0 0 20%;\n  color: purple;\n  font-size: 3.4rem;\n  font-style: italic;\n  font-weight: 700;\n  padding-left: 1.6rem;\n  text-shadow: 0 0 3px #ffffcc;\n  flex-grow: 1; }\n\n.nav-bar {\n  display: flex;\n  justify-content: flex-end;\n  height: 3.2rem;\n  background: transparent;\n  line-height: 3.2rem;\n  padding-right: 2px; }\n\n.current-location {\n  color: transparent;\n  background: purple;\n  height: 0.2rem;\n  box-shadow: 1px 0 4px #b300b3; }\n\n.button {\n  color: #ffffcc;\n  font-size: 2rem;\n  border-left: 1px solid #ffffcc;\n  box-shadow: 1px 0 4px #ffffcc;\n  background: transparent;\n  padding: 0 1.2rem; }\n\n.button:hover {\n  background: rgba(250, 250, 250, 0.1);\n  color: purple;\n  font-weight: 500;\n  cursor: pointer; }\n\n.slideshow {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n.slideshow__background {\n  width: 100%;\n  height: 100%;\n  background-size: cover;\n  opacity: 0.5; }\n\n#slot1 {\n  position: absolute;\n  opacity: 0;\n  width: 100%; }\n\n#slot2 {\n  position: absolute;\n  opacity: 0;\n  width: 100%; }\n\n.slide {\n  position: absolute;\n  background: white;\n  height: 100vh; }\n\n.slide__image {\n  opacity: 0.5;\n  object-fit: cover;\n  max-width: 100%; }\n\n.slide__caption {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  bottom: 20%;\n  left: 0;\n  right: 0;\n  font-weight: 600;\n  margin: auto;\n  width: 60rem;\n  height: 15rem;\n  background: transparent;\n  border-radius: 1rem;\n  text-align: center;\n  text-shadow: -2px 2px 2px #ffffcc, 2px -2px 2px #ffffcc, -2px -2px 2px #ffffcc, 2px 2px 2px #ffffcc;\n  color: #112233; }\n\n.slide__caption__button {\n  padding: 1rem;\n  background: purple;\n  border: 1px solid #112233;\n  border-radius: 3rem;\n  color: white;\n  box-shadow: 0 2px 2px grey;\n  margin: auto; }\n\n.slide__caption__button:hover {\n  cursor: pointer;\n  box-shadow: none;\n  background: #b300b3; }\n\n.chooser {\n  display: flex;\n  justify-content: center; }\n\n.chooser__button {\n  color: transparent;\n  width: .8rem;\n  height: .8rem;\n  border: solid 1px #112233;\n  border-radius: 1rem;\n  background: #1e3c59;\n  text-shadow: none;\n  opacity: .4;\n  margin: 2rem .6rem; }\n\n.chooser__button:hover {\n  cursor: pointer;\n  background: #4d88c4; }\n\n.projects {\n  margin-top: 15rem;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: center; }\n\n.project {\n  position: relative;\n  height: 35rem;\n  width: 95%;\n  justify-content: center; }\n\n.project:hover {\n  cursor: pointer; }\n\n.project > img {\n  top: inherit;\n  height: 100%;\n  width: 100%;\n  object-fit: cover;\n  box-shadow: 0 4px 4px black;\n  margin-bottom: 2rem;\n  border: 1px black solid; }\n\n.projects__title {\n  position: absolute;\n  top: inherit;\n  z-index: 1;\n  padding: 2rem;\n  color: #ffffcc;\n  text-shadow: 0 2px 2px #112233;\n  font-weight: 600;\n  font-size: 4rem; }\n", ""]);
 
 // exports
 
@@ -19826,12 +19826,12 @@ function (_React$Component) {
         title: "The Fishing Game",
         image: "/images/FishingGame.png",
         imageAlt: "A screenshot of Doug Sauve's Fishing Game.",
-        href: "/apps/FishingGame"
+        href: "/projects/FishingGame/app.html"
       }), _react.default.createElement(_AppEntry.default, {
         title: "The Fishing Game",
         image: "/images/FishingGame.png",
         imageAlt: "A screenshot of Doug Sauve's Fishing Game.",
-        href: "/apps/FishingGame"
+        href: "/projects/FishingGame/app.html"
       }));
     }
   }]);
@@ -19979,6 +19979,206 @@ exports.default = NavBar;
 
 /***/ }),
 
+/***/ "./src/components/Slide.js":
+/*!*********************************!*\
+  !*** ./src/components/Slide.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+var Slide =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Slide, _React$Component);
+
+  function Slide() {
+    var _ref;
+
+    var _temp, _this;
+
+    _classCallCheck(this, Slide);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Slide.__proto__ || Object.getPrototypeOf(Slide)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "sendTo", {
+      enumerable: true,
+      writable: true,
+      value: function value(destination) {
+        window.location.href = _this.state.buttonHref;
+      }
+    }), _temp));
+  }
+
+  _createClass(Slide, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react.default.createElement("div", {
+        className: "slide"
+      }, _react.default.createElement("img", {
+        className: "slide__image",
+        src: this.props.slide
+      }), _react.default.createElement("div", {
+        className: "slide__caption",
+        onMouseEnter: function onMouseEnter() {
+          _this2.props.pausingSlideshow();
+        },
+        onMouseLeave: function onMouseLeave() {
+          _this2.props.unpausingSlideshow();
+
+          setTimeout(_this2.props.changeSlide, 0);
+        }
+      }, _react.default.createElement("p", null, this.props.caption), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "slide__caption__button",
+        onClick: this.sendTo.bind(this, this.props.buttonHref)
+      }, this.props.buttonText), _react.default.createElement("div", {
+        className: "chooser"
+      }, this.props.slidesLength.map(function (index) {
+        return _react.default.createElement("div", {
+          key: index,
+          className: "chooser__button",
+          onClick: _this2.props.goToSlide.bind(_this2, index)
+        }, "o");
+      }))));
+    }
+  }]);
+
+  return Slide;
+}(_react.default.Component);
+
+exports.default = Slide;
+
+/***/ }),
+
+/***/ "./src/components/SlideSlot.js":
+/*!*************************************!*\
+  !*** ./src/components/SlideSlot.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/*eslint-disable*/
+var SlideSlot =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SlideSlot, _React$Component);
+
+  function SlideSlot() {
+    _classCallCheck(this, SlideSlot);
+
+    return _possibleConstructorReturn(this, (SlideSlot.__proto__ || Object.getPrototypeOf(SlideSlot)).apply(this, arguments));
+  }
+
+  _createClass(SlideSlot, [{
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate() {
+      return this.shouldUpdate;
+    }
+  }, {
+    key: "componentWillReceiveProps",
+    value: function componentWillReceiveProps(nextProps) {
+      if (this.props.slide === nextProps.slide) {
+        this.shouldUpdate = false;
+      } else {
+        this.shouldUpdate = true;
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var _this = this;
+
+      var slot = document.getElementById(this.props.slotName);
+      var c = 1;
+      this.fadeIn = setInterval(function () {
+        if (c <= 20) {
+          slot.style.opacity = c / 20;
+          c++;
+        } else {
+          clearInterval(_this.fadeIn);
+        }
+
+        ;
+      }, 50);
+    }
+  }, {
+    key: "componentWillUpdate",
+    value: function componentWillUpdate() {
+      clearInterval(this.fadeIn);
+      document.getElementById(this.props.slotName).style.opacity = 0;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        id: this.props.slotName
+      }, this.props.slide);
+    }
+  }]);
+
+  return SlideSlot;
+}(_react.default.Component);
+
+exports.default = SlideSlot;
+;
+
+/***/ }),
+
 /***/ "./src/components/Slideshow.js":
 /*!*************************************!*\
   !*** ./src/components/Slideshow.js ***!
@@ -19995,6 +20195,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _SlideSlot = _interopRequireDefault(__webpack_require__(/*! ./SlideSlot */ "./src/components/SlideSlot.js"));
+
+var _Slide = _interopRequireDefault(__webpack_require__(/*! ./Slide */ "./src/components/Slide.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20028,65 +20232,87 @@ function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "state", {
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "pauseSlideshow", {
+      enumerable: true,
+      writable: true,
+      value: false
+    }), Object.defineProperty(_assertThisInitialized(_this), "slideshowInstanceIsRunning", {
+      enumerable: true,
+      writable: true,
+      value: false
+    }), Object.defineProperty(_assertThisInitialized(_this), "count", {
+      enumerable: true,
+      writable: true,
+      value: 0
+    }), Object.defineProperty(_assertThisInitialized(_this), "slides", {
+      enumerable: true,
+      writable: true,
+      value: []
+    }), Object.defineProperty(_assertThisInitialized(_this), "state", {
       enumerable: true,
       writable: true,
       value: {
-        count: 0,
-        slide: _this.props.slides[0][0],
-        caption: _this.props.slides[0][1],
-        buttonText: _this.props.slides[0][2],
-        buttonHref: _this.props.slides[0][3],
-        pauseSlideshow: false,
-        slideshowInstanceIsRunning: false
+        slide1: undefined,
+        slide2: undefined
       }
-    }), Object.defineProperty(_assertThisInitialized(_this), "sendTo", {
+    }), Object.defineProperty(_assertThisInitialized(_this), "pausingSlideshow", {
       enumerable: true,
       writable: true,
-      value: function value(destination) {
-        window.location.href = _this.state.buttonHref;
+      value: function value() {
+        _this.pauseSlideshow = true;
+      }
+    }), Object.defineProperty(_assertThisInitialized(_this), "unpausingSlideshow", {
+      enumerable: true,
+      writable: true,
+      value: function value() {
+        _this.pauseSlideshow = false;
+      }
+    }), Object.defineProperty(_assertThisInitialized(_this), "goToSlide", {
+      enumerable: true,
+      writable: true,
+      value: function value(count) {
+        //set page background to this image
+        document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = "url(".concat(_this.props.slides[_this.count][0], ")");
+
+        _this.setState(function () {
+          return {
+            slide1: _this.slides[count],
+            slide2: _this.slides[count]
+          };
+        });
+
+        _this.count = count;
       }
     }), Object.defineProperty(_assertThisInitialized(_this), "changeSlide", {
       enumerable: true,
       writable: true,
       value: function value() {
-        if (_this.state.slideshowInstanceIsRunning !== true) {
-          _this.setState(function () {
-            return {
-              slideshowInstanceIsRunning: true
-            };
-          });
-
+        if (_this.slideshowInstanceIsRunning !== true) {
+          _this.slideshowInstanceIsRunning = true;
           setTimeout(function () {
-            if (_this.state.pauseSlideshow !== true) {
-              var maxCount = _this.props.slides.length;
-              var count = _this.state.count;
-              if (count < maxCount) count++;
-              if (count === maxCount) count = 0;
-              var slide = _this.props.slides[count][0];
-              var caption = _this.props.slides[count][1];
-              var buttonText = _this.props.slides[count][2];
-              var buttonHref = _this.props.slides[count][3]; //actual changes here. Set left/right. start left: if showing left, set right to the new one, then in .2 seconds fade left out to transparent. If showing right, set left to new, then in .2 seconds fade right out to transparent.
+            if (_this.pauseSlideshow === false) {
+              var maxCount = _this.slides.length;
+              if (_this.count < maxCount) _this.count++;
+              if (_this.count === maxCount) _this.count = 0;
 
-              _this.setState(function () {
+              _this.setState(function (prevState) {
                 return {
-                  count: count,
-                  slide: slide,
-                  caption: caption,
-                  buttonText: buttonText,
-                  buttonHref: buttonHref
+                  slide2: _this.state.slide1
                 };
               });
 
+              setTimeout(function () {
+                _this.setState(function (prevState) {
+                  return {
+                    slide1: _this.slides[_this.count]
+                  };
+                });
+              }, 2000);
               setTimeout(_this.changeSlide, 0);
             }
 
-            _this.setState(function () {
-              return {
-                slideshowInstanceIsRunning: false
-              };
-            });
-          }, 3000);
+            _this.slideshowInstanceIsRunning = false;
+          }, 5000);
         }
       }
     }), _temp));
@@ -20095,46 +20321,52 @@ function (_React$Component) {
   _createClass(Slideshow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.changeSlide();
+      var _this2 = this;
+
+      document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = "url(".concat(this.props.slides[0][0], ")"); // create the array of slides:
+
+      this.props.slides.map(function (slide, index) {
+        _this2.slides.push(_react.default.createElement(_Slide.default, {
+          slide: _this2.props.slides[index][0],
+          caption: _this2.props.slides[index][1],
+          buttonText: _this2.props.slides[index][2],
+          buttonHref: _this2.props.slides[index][3],
+          slidesLength: _this2.props.slides.map(function (slide, index) {
+            return index;
+          }),
+          changeSlide: _this2.changeSlide,
+          pausingSlideshow: _this2.pausingSlideshow,
+          unpausingSlideshow: _this2.unpausingSlideshow,
+          goToSlide: _this2.goToSlide
+        }));
+      });
+      this.setState(function () {
+        return {
+          slide1: _this2.slides[0],
+          slide2: _this2.slides[0]
+        };
+      });
+      setTimeout(this.changeSlide(), 0);
     }
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      return _react.default.createElement("div", null, _react.default.createElement("div", {
+      return _react.default.createElement("div", {
         className: "slideshow"
-      }, _react.default.createElement("img", {
-        src: this.state.slide
-      }), _react.default.createElement("div", {
-        className: "caption",
-        onMouseEnter: function onMouseEnter() {
-          _this2.setState(function () {
-            return {
-              pauseSlideshow: true
-            };
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          _this2.setState(function () {
-            return {
-              pauseSlideshow: false
-            };
-          });
-
-          setTimeout(_this2.changeSlide, 0);
-        }
-      }, _react.default.createElement("p", null, this.state.caption), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "caption__button",
-        onClick: this.sendTo.bind(this, this.state.buttonHref)
-      }, this.state.buttonText))));
+      }, _react.default.createElement("div", {
+        className: "slideshow__background"
+      }), _react.default.createElement(_SlideSlot.default, {
+        slide: this.state.slide2,
+        slotName: "slot2"
+      }), _react.default.createElement(_SlideSlot.default, {
+        slide: this.state.slide1,
+        slotName: "slot1"
+      }));
     }
   }]);
 
   return Slideshow;
-}(_react.default.Component); //Still need:
-//crossfading
-
+}(_react.default.Component);
 
 exports.default = Slideshow;
 
@@ -20173,16 +20405,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   </BrowserRouter>
 // )
 //
-switch (window.location.pathname) {
-  case '/':
-    _reactDom.default.render(_react.default.createElement(_index.default, null), document.getElementById('app'));
+console.log('PATHNAME: ', window.location.pathname);
 
-    break;
+if (window.location.pathname === '/') {
+  _reactDom.default.render(_react.default.createElement(_index.default, null), document.getElementById('app'));
+}
 
-  case '/apps':
-    _reactDom.default.render(_react.default.createElement(_apps.default, null), document.getElementById('app'));
-
-    break;
+if (window.location.pathname === '/app') {
+  _reactDom.default.render(_react.default.createElement(_apps.default, null), document.getElementById('app'));
+} else {
+  console.log('404');
 }
 
 /***/ }),
@@ -20255,15 +20487,11 @@ var Index = function Index() {
   return _react.default.createElement("div", null, _react.default.createElement(_Header.default, {
     content: 'Hi, I\'m Doug. I create web apps.'
   }), _react.default.createElement(_NavBar.default, {
-    dests: [['Home', '/'], ['My work', '/apps'], ['Hire me', '/hire.js'], ['Blog', '/blog.js']]
+    dests: [['Home', '/'], ['My work', '/app'], ['Hire me', '/hire.js'], ['Blog', '/blog.js']]
   }), _react.default.createElement(_Slideshow.default, {
-    slides: [['./images/1.jpg', 'Come and have a look at what I can do.', 'See my work', './apps'], ['./images/2.jpg', 'See what\'s new on my blog.', 'Go', './blog'], ['./images/3.jpg', 'Want my help with a project?', 'Get in touch', './hire']]
+    slides: [['./images/1.jpg', 'Want to know what I can do?', 'Check out my work', './app'], ['./images/2.jpg', 'See what\'s new on my blog.', 'Go', './blog'], ['./images/3.jpg', 'Want my help with a project?', 'Get in touch', './hire']]
   }));
-}; // 'Hi there. My name is Doug, and I build web apps.(about)',
-// 'Take a look at what I can do. (wICD)',
-// 'Come and see my blog.(blog)'
-//Hi there. My name is Doug, and I build web apps.
-
+};
 
 exports.default = Index;
 

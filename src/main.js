@@ -15,14 +15,14 @@ import './styles/styles.scss';
 //   </BrowserRouter>
 // )
 //
-switch(window.location.pathname){
-  case '/':
+console.log('PATHNAME: ', window.location.pathname);
+
+if (window.location.pathname === '/') {
   ReactDOM.render(<Index />, document.getElementById('app'));
-  break;
-  case '/apps':
+}
+if (window.location.pathname === '/app') {
   ReactDOM.render(<Apps />, document.getElementById('app'));
-  break;
-  // case '/apps/FishingGame':
-  // ReactDOM.render(<Apps />, document.getElementById('app'));
-  // break;
+}
+else {
+  console.log('404');
 }

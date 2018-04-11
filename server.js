@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const history = require('connect-history-api-fallback');
 
 const port = process.env.PORT || 4201;
 const app = new express();

@@ -3,6 +3,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.link {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
 #rules{
 	margin-top: 125px;
 }
@@ -21,6 +26,7 @@ text-align: center;
 }
 
 .circle{
+position: absolute;
 width: 175px;
 height: 175px;
 border-radius: 100px;
@@ -37,14 +43,12 @@ font-size: .9rem;
 text-align: middle;
 }
 #circle1{
-position: fixed;
 top: -25px;
 left: -15px;
 background-color: #e0cf0b;
 z-index: 1;
 }
 #circle2{
-position: absolute;
 top: 40px;
 left: 125px;
 background-color: #c24501;
@@ -55,7 +59,6 @@ padding: 8px;
 
 }
 #circle3{
-position: absolute;
 top: -40px;
 left: 265px;
 background-color: #942701;
@@ -66,7 +69,6 @@ padding: 8px;
 padding-top: 24px;
 }
 #circle4{
-position: absolute;
 top: 40px;
 left: 405px;
 background-color: #c24501;
@@ -80,7 +82,6 @@ position: relative;
 left: 5px;
 }
 #circle5{
-position: absolute;
 top: -65px;
 left: 970px;
 background-color: #942701;
@@ -93,7 +94,6 @@ font-size: 20px;
 font-weight: bold;
 }
 #circle6{
-position: absolute;
 top: 25px;
 left: 835px;
 background-color: #c24501;
@@ -103,7 +103,6 @@ z-index: 2;
 padding: 8px;
 }
 #circle7{
-position: absolute;
 top: 105px;
 left: 975px;
 background-color: #ee7001;
@@ -113,7 +112,6 @@ z-index: 3;
 padding: 8px;
 }
 #circle8{
-position: absolute;
 top: 25px;
 left: 1105px;
 background-color: #c24501;
@@ -257,4 +255,4 @@ position: absolute;
 top: 800px;
 left: 450px;
 z-index: 5;
-}*/
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Slide extends React.Component {
   sendTo = (destination) => {
-    window.location.href = this.state.buttonHref;
+    window.location.href = this.props.buttonHref;
   }
 
   render() {

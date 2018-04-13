@@ -6,11 +6,11 @@ import AppList from '../components/AppList';
 
 const Apps = () => (
   <div>
+    <Header content = {'Here are some of my projects.'} />
     <NavBar
-      dests = {[['Home', '/'], ['My work', '/apps'], ['Hire me', '/hire.js'], ['Blog', '/blog.js']]}
+      dests = {[['Home', '/'], ['My work', '/app'], ['Hire me', '/hire'], ['Blog', '/blog']]}
       color = {'#112233'}
     />
-    <Header content = {'Here are some of my projects.'} />
     <AppList />
   </div>
 );

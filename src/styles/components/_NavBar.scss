@@ -1,28 +1,76 @@
 .nav-bar {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   height: $l-size;
   background: transparent;
   line-height: $l-size;
   padding-right: 2px;
+  z-index: 2;
 }
 .current-location {
+  display: inline-block;
   color: transparent;
   background: purple;
   height: 0.2rem;
   box-shadow: 1px 0 4px lighten(purple, 10%);
 }
 .button {
-  color: $cream;
+  color: $dark;
   font-size: 2rem;
+  max-height: 3rem;
   border-left: 1px solid $cream;
   box-shadow: 1px 0 4px $cream;
-  background: transparent;
+  background: $cream;
   padding: 0 $xs-size;
 }
 .button:hover {
-  background: rgba(250,250,250,.1);
-  color: purple;
+  background: darken($cream, 10%);
   font-weight: 500;
   cursor: pointer;
+}
+.nav-mobile-menu-icon {
+  color: $cream;
+  font-size: $l-size;
+  padding-right: .6rem;
+  text-align: right;
+}
+.nav-mobile-menu-icon:hover {
+  cursor: pointer;
+  color: darken($cream, 20%);
+}
+.nav-mobile-menu {
+  display: none;
+  position: relative;
+  font-size: $m-size;
+}
+//for mobile
+@media (max-width: $desktop-breakpoint -1) {
+  .button {
+    color: $dark;
+    font-weight: 700;
+    font-size: 2rem;
+    border-left: 1px solid $cream;
+    box-shadow: 1px 0 4px $cream;
+    background: $cream;
+    padding: 0 $xs-size;
+  }
+}
+//for desktop
+@media (min-width: $desktop-breakpoint) {
+  .nav-bar {
+    flex-direction: row;
+  }
+  .button {
+    color: $cream;
+    font-size: 2rem;
+    border-left: 1px solid $cream;
+    box-shadow: 1px 0 4px $cream;
+    background: transparent;
+    padding: 0 $xs-size;
+  }
+  .button:hover {
+    background: rgba(250,250,250,.1);
+    color: purple;
+  }
 }

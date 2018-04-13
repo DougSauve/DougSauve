@@ -9,17 +9,19 @@
   opacity: 0.5;
   object-fit: cover;
   width: 100%;
+  min-height: 100%;
 }
+// mobile
 .slide__caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 0; bottom: 20%; left: 0; right: 0;
+  top: 20%; bottom: 0; left: 0; right: 0;
   font-weight: 600;
   margin: auto;
-  width: 60rem;
-  height: 15rem;
+  width: 40%;
+  height: 20%;
   background: transparent;
   border-radius: 1rem;
   text-align: center;
@@ -59,4 +61,12 @@
 .chooser__button:hover {
   cursor: pointer;
   background: lighten($dark, 40%);
+}
+
+// desktop
+@media (min-width: $desktop-breakpoint) {
+  .slide__caption {
+    top: 0;
+    bottom: 20%;
+  }
 }

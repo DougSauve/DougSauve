@@ -41,23 +41,63 @@ class NavBar extends React.Component {
     }
   }
 
+  toggleDisplayMobileMenu() {
+
+    const menu = document.getElementsByClassName('nav-mobile-menu')[0];
+    const button = document.getElementsByClassName('nav-mobile-menu-icon')[0];
+    if (menu.style.display !== "block") {
+      button.style.color = "#112233";
+      button.style.background = "#ffffcc";
+      menu.style.display = "block";
+    } else {
+      button.style.color = "#ffffcc";
+      button.style.background = "transparent";
+      menu.style.display = "none";
+    }
+  }
+
+  chooseNavBarStyle() {
+    { if (window.innerWidth <= 450) {
+        //for mobile
+        return <div className = "nav-mobile-menu-icon"
+          onClick = {this.toggleDisplayMobileMenu}
+        >
+          &#9776;
+          <div className = "nav-mobile-menu">
+            {
+              this.props.dests.map((dest) => {
+                return <div
+                  className = "button"
+                  key = {dest[1]}
+                  onClick = {this.sendTo.bind(this, dest[1])}
+                >
+                  {dest[0]}
+                  <div>{this.showCurrentLocation(dest)}</div>
+                </div>
+              })
+            }
+          </div>
+        </div>;
+      }else{
+        // for desktop
+        return this.props.dests.map((dest) => {
+          return <div
+            className = "button"
+            key = {dest[1]}
+            onClick = {this.sendTo.bind(this, dest[1])}
+          >
+            {dest[0]}
+            <div>{this.showCurrentLocation(dest)}</div>
+          </div>
+        })
+      }
+    }
+  }
+
   render() {
     return (
       <div className = "nav-bar">
-
-        {
-          /* eslint-disable */
-          this.props.dests.map((dest) => {
-            return <div
-              className = "button"
-              key = {dest[1]}
-              onClick = {this.sendTo.bind(this, dest[1])}
-            >
-              {dest[0]}
-              <div>{this.showCurrentLocation(dest)}</div>
-            </div>
-          })
-        }
+        {this.chooseNavBarStyle()}
       </div>
     );
   }

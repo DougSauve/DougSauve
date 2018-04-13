@@ -5,11 +5,19 @@ export default class Slide extends React.Component {
     window.location.href = this.props.buttonHref;
   }
 
+  chooseImage = () => {
+    if (window.innerWidth <= 450) {
+      return this.props.mobileImage;
+    } else {
+      return this.props.desktopImage;
+    }
+  }
+
   render() {
     return (
       <div className = "slide">
 
-        <img className = "slide__image" src = {this.props.slide}></img>
+        <img className = "slide__image" src = {this.chooseImage()}></img>
         <div className = "slide__caption"
           onMouseEnter = {() => {
             this.props.pausingSlideshow();

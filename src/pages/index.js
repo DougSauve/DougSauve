@@ -12,9 +12,9 @@ const Index = () => (
     />
     <Slideshow
       slides = {[
-        ['./images/1.jpg', 'Want to know what I can do?', 'Check out my work', './app'],
-        ['./images/3.jpg', 'Want my help with a project?', 'Get in touch', './contact'],
-        ['./images/2.jpg', 'See what\'s new on my blog.', 'Go', './blog'],
+        ['./images/1.jpg', 'Curious what I can do?', 'Check out my work', './app'],
+        ['./images/2.jpg', 'Want my help with a project?', 'Get in touch', './contact'],
+        [['./images/3.jpg', './images/3-mobile.jpg'], 'See what\'s new on my blog.', 'Go', './blog'],
     ]}
     />
   </div>

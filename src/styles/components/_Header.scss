@@ -1,6 +1,7 @@
+// for mobile
 .header {
   position: absolute;
-  margin: 0 0 0 20%;
+  margin: $xl-size 0 0 10%;
   color: purple;
   font-size: 3.4rem;
   font-style: italic;
@@ -8,4 +9,10 @@
   padding-left: $s-size;
   text-shadow: 0 0 3px $cream;
   flex-grow: 1;
+}
+// for desktop
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    margin: $xl-size 0 0 20%;
+  }
 }

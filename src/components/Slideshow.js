@@ -65,9 +65,21 @@ export default class Slideshow extends React.Component {
     document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = `url(${this.props.slides[0][0]})`;
     // create the array of slides:
     this.props.slides.map((slide, index) => {
+
+      // check if there is a mobile image to display
+      let desktopImage;
+      let mobileImage;
+      if (typeof this.props.slides[index][0] === 'object') {
+        desktopImage = this.props.slides[index][0][0];
+        mobileImage = this.props.slides[index][0][1];
+      } else {
+        desktopImage = this.props.slides[index][0];
+        mobileImage = this.props.slides[index][0];
+      }
       this.slides.push (
         <Slide
-          slide = {this.props.slides[index][0]}
+          desktopImage = {desktopImage}
+          mobileImage = {mobileImage}
           caption = {this.props.slides[index][1]}
           buttonText = {this.props.slides[index][2]}
           buttonHref = {this.props.slides[index][3]}

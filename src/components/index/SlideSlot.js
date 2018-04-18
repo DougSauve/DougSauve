@@ -1,7 +1,8 @@
 import React from 'react';
-/*eslint-disable*/
+
 export default class SlideSlot extends React.Component {
 
+  //variables
   fadeIn;
   shouldUpdate;
 

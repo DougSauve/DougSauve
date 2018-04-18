@@ -29,12 +29,12 @@ export default class Slide extends React.Component {
           >
           <p>{this.props.caption}</p>
             <br />
-          <button
+          <div
             className = "slide__caption__button"
             onClick = {this.sendTo.bind(this, this.props.buttonHref)}
           >
-            {this.props.buttonText}
-          </button>
+            <span>{this.props.buttonText}</span>
+          </div>
 
           {/* slide chooser */}
           <div className = "chooser">

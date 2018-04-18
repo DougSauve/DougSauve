@@ -1,0 +1,29 @@
+
+
+.apps__entry {
+  position: relative;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.apps__entry__image {
+  height: 100%;
+  width: 95vw;
+  object-fit: cover;
+  box-shadow: 0 4px 4px black;
+  border: 1px black solid;
+}
+.apps__entry__image:hover {
+  cursor: pointer;
+}
+.apps__entry__title {
+  position: absolute;
+  top: 2rem;
+  left: 5vw;
+  z-index: 1;
+  color: $cream;
+  text-shadow: 0 2px 2px $dark;
+  font-weight: 600;
+  font-size: 4rem;
+}

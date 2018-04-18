@@ -1,0 +1,60 @@
+#Blog__Header {
+  position: relative;
+  color: white;
+  background: darken($cream, 50%);
+  box-shadow: 0 2px 4px grey;
+
+  margin-bottom: $xl-size;
+  padding:$m-size;
+
+  font-size: 2.3rem;
+  font-weight: 700;
+
+  z-index: 1;
+}
+#Blog__Header__Title {
+  position: relative;
+  color: white;
+  font-size: 7rem;
+  font-weight: 700;
+  background: darken($cream, 65%);
+  text-align: center;
+  padding: 4rem 0;
+  margin-top: 9rem;
+  z-index: 2;
+  box-shadow: 0 2px 4px black;
+}
+#Blog__Header__Contents {
+  margin: 0 auto;
+
+  display: flex;
+  padding: 0 $m-size;
+  width: 75vw;
+
+  b {
+    color: darken($cream, 15%);
+  }
+}
+#Blog__Header__Introduction {
+  flex: 0 1 auto;
+  display: flex;
+  width: 50%;
+}
+#Blog__Header__Picture {
+  flex: 1 0 auto;
+  height: 10rem;
+  width: 10rem;
+  margin-right: $m-size;
+  border: $cream solid 1px;
+}
+#Blog__Header__Introduction-text {
+  flex: 1 1 auto;
+  text-wrap: wrap;
+}
+#Blog__Header__Description {
+  flex: 0 1 auto;
+  width: 50%;
+  border-left: $cream solid 1px;
+  padding-left: $m-size;
+  text-wrap: wrap;
+}

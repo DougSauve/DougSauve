@@ -1,11 +1,6 @@
-/* eslint-disable */
-
 import React from 'react';
 
-//import NavBar-Selected from './NavBar-Selected';
-
 class NavBar extends React.Component {
-
   sendTo(destination) {
     window.location.href = destination;
   };

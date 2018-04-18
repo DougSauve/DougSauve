@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Header from '../components/Header'
 import NavBar from '../components/NavBar';
-import Slideshow from '../components/Slideshow';
+import Footer from '../components/Footer';
+
+import IndexHeader from '../components/index/IndexHeader'
+import Slideshow from '../components/index/Slideshow';
 
 const Index = () => (
   <div>
-    <Header content= {'Hi, I\'m Doug. I create web apps.'} />
+    <IndexHeader content = {'Hi, I\'m Doug. I create web apps.'} />
     <NavBar
       dests = {[['Home', '/'], ['My work', '/app'], ['Contact me', '/contact'], ['Blog', '/blog']]}
     />
@@ -17,6 +19,7 @@ const Index = () => (
         [['./images/3.jpg', './images/3-mobile.jpg'], 'See what\'s new on my blog.', 'Go', './blog'],
     ]}
     />
+      <Footer />
   </div>
 );
 

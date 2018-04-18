@@ -1,15 +1,17 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
-  entry: __dirname + `/src/main.js`,
+  entry: ['babel-polyfill', path.join(__dirname, `/src/main.js`)],
   output: {
-    path: __dirname + `/public`,
+    path: path.join(__dirname, `/public`),
     filename: `bundle.js`
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: __dirname + '/node_modules',
+        exclude: path.join(__dirname, '/node_modules'),
         use: {
           loader: 'babel-loader',
           options: {
@@ -29,7 +31,7 @@ module.exports = {
       }
     ]
   },
-  // devtool: `source-map`,
+  devtool: `source-map`,
   // devServer: {
   //   contentBase: __dirname + '/public',
   //   port: 4201,

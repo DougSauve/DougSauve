@@ -1,9 +1,21 @@
 @import './base/settings';
 @import './base/base';
-@import './components/AppList';
-@import './components/Header';
-@import './components/Maintenance';
+
 @import './components/NavBar';
-@import './components/Slide';
-@import './components/Slideshow';
-@import './components/SlideSlot';
+@import './components/Footer';
+
+@import './components/index/IndexHeader';
+@import './components/index/Slide';
+@import './components/index/Slideshow';
+@import './components/index/SlideSlot';
+
+@import './components/apps/Apps';
+@import './components/apps/AppEntry';
+@import './components/apps/AppList';
+
+@import './components/blog/BlogHeader';
+@import './components/blog/BlogList';
+
+@import './components/Maintenance';
+@import './components/NotFound';
+@import './components/Dash';

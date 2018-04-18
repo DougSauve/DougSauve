@@ -1,11 +1,20 @@
 Blog
 
+Contact
+  dougsauve4.200@gmail.com
+
+
+
 About
     Hire Doug
 
     About Doug
-        personal
+        personal (x)
         professional
+          skills
+          link to what I can do
+          links to github, linkedin
+          goals
 
 
 What I can do

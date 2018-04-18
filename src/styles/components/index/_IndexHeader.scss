@@ -1,5 +1,5 @@
 // for mobile
-.header {
+.index__header {
   position: absolute;
   margin: $xl-size 0 0 10%;
   color: purple;
@@ -12,7 +12,7 @@
 }
 // for desktop
 @media (min-width: $desktop-breakpoint) {
-  .header {
+  .index__header {
     margin: $xl-size 0 0 20%;
   }
 }

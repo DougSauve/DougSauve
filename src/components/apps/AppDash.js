@@ -1,10 +1,12 @@
 import React from 'react';
 
+import AppDescription from './AppDescription';
+
 export default class AppDash extends React.Component {
   render() {
     return (
       <div id = "apps-dash">
-        This is the apps-dash div.
+        <AppDescription />
       </div>
     );
   }

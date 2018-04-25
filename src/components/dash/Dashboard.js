@@ -237,7 +237,6 @@ class Dashboard extends React.Component {
         id = "dash__post"
         className = "dash__frame__style dash__frame__positioning"
       >
-
         <DashboardForm
           message = {this.state.message}
           handleSubmitPost = {this.handleSubmitPost}

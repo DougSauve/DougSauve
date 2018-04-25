@@ -11,10 +11,13 @@
 
 @import './components/apps/Apps';
 @import './components/apps/AppEntry';
+@import './components/apps/AppDash';
 @import './components/apps/AppList';
 
 @import './components/blog/BlogHeader';
 @import './components/blog/BlogList';
+
+@import './components/contact/EmailMe';
 
 @import './components/Maintenance';
 @import './components/NotFound';

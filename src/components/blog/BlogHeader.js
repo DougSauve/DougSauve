@@ -9,8 +9,7 @@ const BlogHeader = () => (
         <img id = "Blog__Header__Picture" src = "./images/doug-small.png" />
         <div id = "Blog__Header__Introduction-text">
           Hi, I'm Doug. I'm a <b>React/Node </b>
-          Full-Stack developer and student,
-          and I love being both.
+          Full-Stack developer and student, and I enjoy both of those roles.
         </div>
       </div>
       <div id = "Blog__Header__Description">

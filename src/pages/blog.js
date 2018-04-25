@@ -9,7 +9,7 @@ import BlogHeader from '../components/blog/BlogHeader';
 const Blog = () => (
   <div>
     <NavBar
-      dests = {[['Home', '/'], ['My work', '/app'], ['Contact me', '/contact'], ['Blog', '/blog']]}
+      dests = {[['Home', '/'], ['About me', '/about'], ['My work', '/app'], ['Contact me', '/contact'], ['Blog', '/blog']]}
       color = {'#112233'}
     />
     <BlogHeader />

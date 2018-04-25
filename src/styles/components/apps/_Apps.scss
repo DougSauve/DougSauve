@@ -1,3 +1,11 @@
+#apps-page {
+  .nav-bar {
+    position: fixed;
+    background: $cream;
+    box-shadow: 0 2px 4px grey;
+  }
+}
+
 #apps__header {
   position: relative;
   display: flex;
@@ -6,10 +14,7 @@
   margin-top: 7rem;
 }
 #apps__header__background {
-  background:-webkit-linear-gradient(180deg, rgba(191,143,196,1) 0%, rgba(250,247,250,1) 100%);
-  background:-o-linear-gradient(180deg, rgba(191,143,196,1) 0%, rgba(250,247,250,1) 100%);
-  background:-moz-linear-gradient(180deg, rgba(191,143,196,1) 0%, rgba(250,247,250,1) 100%);
-  background:linear-gradient(180deg, rgba(191,143,196,1) 0%, rgba(250,247,250,1) 100%);
+
 
   height: 35rem;
   width: 95vw;

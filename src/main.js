@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+
+import createStore from './redux/store';
+const store = createStore();
 
 import Index from './pages/index';
 import Apps from './pages/apps';
@@ -16,18 +20,24 @@ console.log('PATHNAME: ', window.location.pathname);
 
 const app = document.getElementById('app');
 
-switch (window.location.pathname) {
-  case '/': ReactDOM.render(<Index />, app);
-  break;
-  case '/app': ReactDOM.render(<Apps />, app);
-  break;
-  case '/blog': ReactDOM.render(<Blog />, app);
-  break;
-  case '/contact': ReactDOM.render(<Contact />, app);
-  break;
-  case '/dash': ReactDOM.render(<Dash />, app);
-  break;
+//break this out into its own component, wrap it in Provider
+const Router = () => {
+    switch (window.location.pathname) {
+      case '/': return <Index />;
+      case '/app': return <Apps />;
+      case '/blog': return <Blog />;
+      case '/contact': return <Contact />;
+      case '/dash': return <Dash />;
 
-  default:
-  ReactDOM.render(<NotFound />, app);
+      default:
+      return <NotFound />;
+  };
 };
+
+const WrappedApp = () => (
+  <Provider store = {store} >
+    <Router />
+  </Provider>
+);
+
+ReactDOM.render(<WrappedApp />, app);

@@ -1,36 +1,36 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import moment from 'moment';
+import { setPosts } from '../../redux/store';
 
 const socket = io();
 
-export default class BlogList extends React.Component {
+class BlogList extends React.Component {
 
   state = {
     err: undefined,
-    posts: []
   }
 
   componentDidMount() {
-    socket.emit('readAllPosts', {}, (err, res) => {
-      if (err) return this.setState(() => ({ err, posts: [] }));
+    socket.emit('readAllPosts', '', (err, res) => {
+      if (err) {
+        this.props.dispatch(setPosts());
+        return this.setState(() => ({ err }));
+      }
       if (res) {
-        this.setState(() => {
-          return {
-            err: undefined,
-            posts: res
-          }
-        });
+        this.props.dispatch(setPosts({ posts: res }));
+        return this.setState(() => ({ err: undefined }));
       }
     });
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(props) {
     //clear all previous posts so they don't stack
     const postsDiv = document.getElementById('BlogList__post__container');
     while (postsDiv.firstChild) postsDiv.removeChild(postsDiv.firstChild);
 
     //for each item, add a div to posts.
-    this.state.posts.forEach((post) => {
+    this.props.posts.forEach((post) => {
 
       //part below adds it straight to the page.
       const newPost = document.createElement('div');
@@ -68,7 +68,7 @@ export default class BlogList extends React.Component {
               postCreatedAt.appendChild(createdAt);
 
             postTimeStamp.appendChild(postCreatedAt);
-            if (post.editedAt === "DEAL WITH EDITEDATE LATER") {
+            if (post.editedAt === "THIS IS A PROBLEM") {
               //editedAt text
               const postEditedAtText = document.createElement('span');
               postEditedAtText.setAttribute("class", "BlogList__post__timeStamp-text");
@@ -108,7 +108,7 @@ export default class BlogList extends React.Component {
       document.getElementById('BlogList__post__container').appendChild(stripe);
     });
   }
-//next thing to do here, optionally, is make the blog update in real time.
+
   render() {
     return (
       <div id = "BlogList__post__container">
@@ -116,3 +116,7 @@ export default class BlogList extends React.Component {
     )
   }
 };
+
+const mapStateToProps = (reduxState) => ({ posts: reduxState.posts });
+
+export default connect(mapStateToProps)(BlogList);

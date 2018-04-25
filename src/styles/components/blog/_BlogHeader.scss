@@ -1,7 +1,19 @@
+#Blog__Header__Title {
+  position: relative;
+  color: $cream;
+  font-size: 7rem;
+  font-weight: 700;
+  background: darken($cream, 75%);
+  text-align: center;
+  padding: 4rem 0;
+  margin-top: 9rem;
+  z-index: 2;
+  box-shadow: 0 2px 4px black;
+}
 #Blog__Header {
   position: relative;
   color: white;
-  background: darken($cream, 50%);
+  background: darken($cream, 65%);
   box-shadow: 0 2px 4px grey;
 
   margin-bottom: $xl-size;
@@ -11,18 +23,6 @@
   font-weight: 700;
 
   z-index: 1;
-}
-#Blog__Header__Title {
-  position: relative;
-  color: white;
-  font-size: 7rem;
-  font-weight: 700;
-  background: darken($cream, 65%);
-  text-align: center;
-  padding: 4rem 0;
-  margin-top: 9rem;
-  z-index: 2;
-  box-shadow: 0 2px 4px black;
 }
 #Blog__Header__Contents {
   margin: 0 auto;

@@ -4,7 +4,7 @@ const {Post} = require('../../models/post.js');
 const readPost = async (name) => {
   const res = await Post.findOne({name});
   if (!res) return false;
-  return res;
+  return [res];
 }
 const readAllPosts = async (name) => {
   const res = await Post.find();

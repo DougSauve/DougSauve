@@ -8,6 +8,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 const db = require('./db/methods.js');
+const {sanitize} = require('../utils/sanitizeServer');
 
 const port = process.env.PORT || 4201;
 
@@ -17,6 +18,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 // redirects all other files to main.js in Reactland
 
 app.get('/*', (req, res) => {
+  req.url = sanitize(req.url);
   console.log('going to GET', req.url);
   if (!req.url.includes('.')) {
     req.url = '/';
@@ -32,10 +34,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!!await db.readPost(post.name)) {
+    if (!!await db.readPost(sanitize(post.name))) {
       err = `There is already a blog post with the name ${post.name}. Please choose a different name.`;
     } else {
-      result = await db.createPost(post.name, post.content);
+      result = await db.createPost(sanitize(post.name), sanitize(post.content));
       console.log('created', result);
     }
     acknowledge(err, result);
@@ -45,7 +47,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.readPost(name);
+    result = await db.readPost(sanitize(name));
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
     console.log('read', result);
@@ -55,7 +57,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.readAllPosts(name);
+    result = await db.readAllPosts(sanitize(name));
 
     if (!result) err = `Could not find any blog posts.`;
     console.log('read', result);
@@ -65,10 +67,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!await db.readPost(post.name)) {
+    if (!await db.readPost(sanitize(post.name))) {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
-      result = await db.updatePost(post.name, post.content);
+      result = await db.updatePost(sanitize(post.name), sanitize(post.content));
       console.log('updated', result);
     }
     acknowledge(err, result);
@@ -77,10 +79,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!await db.readPost(post.name)) {
+    if (!await db.readPost(sanitize(post.name))) {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
-      result = await db.updateName(post.name, post.content);
+      result = await db.updateName(sanitize(post.name), sanitize(post.content));
       console.log('updated name:', result);
     }
     acknowledge(err, result);
@@ -89,7 +91,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.deletePost(name);
+    result = await db.deletePost(sanitize(name));
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
     console.log('deleted', result);
@@ -99,7 +101,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.deleteAllPosts(password);
+    result = await db.deleteAllPosts(sanitize(password));
     if (result === true) {
        err = 'Incorrect password.';
     } else if (!result) err = `Could not find any blog posts.`;

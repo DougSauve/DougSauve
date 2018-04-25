@@ -17,6 +17,7 @@ About
           goals
 
 
+
 What I can do
 
 
@@ -40,3 +41,10 @@ What I can do
         Wilderness (ongoing, probably)
 
         list of skills link
+
+
+
+I need a page that talks about me as a developer. The skills I have, the stack I work with and a log of what I've accomplished when.
+Future learning plans. Basically where I am, where I've been, and where I'm going.
+Doug as a developer <-- shorten this
+

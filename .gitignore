@@ -2,3 +2,5 @@ node_modules/
 .eslintrc
 planning.txt
 shortServer.js
+public/bundle.js
+public/bundle.js.map

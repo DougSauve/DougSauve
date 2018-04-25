@@ -3,7 +3,8 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 
 import AppDash from '../components/apps/AppDash';
-import AppList from '../components/apps/AppList';
+import AppGallery from '../components/apps/AppGallery';
+import appList from '../components/apps/appList';
 
 const Apps = () => (
   <div id = "apps-page">
@@ -16,8 +17,12 @@ const Apps = () => (
         ['Blog', '/blog']]}
       color = {'#112233'}
     />
-    <AppDash />
-    <AppList />
+    <AppDash
+      appList = {appList}
+    />
+    <AppGallery
+      appList = {appList}
+    />
   </div>
 );
 

@@ -7,7 +7,7 @@ const app = new express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const db = require('./db/methods.js');
+const db = require('./db/blogPostMethods.js');
 const {sanitize} = require('../utils/sanitizeServer');
 
 const port = process.env.PORT || 4201;

@@ -17,4 +17,6 @@
 }
 .apps__entry__image:hover {
   cursor: pointer;
+  box-shadow: 0 4px 4px lighten(black, 5%);
+  opacity: .95;
 }

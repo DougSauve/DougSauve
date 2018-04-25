@@ -7,8 +7,15 @@ export default class AppEntry extends React.Component {
 
   render () {
     return (
-      <div className = "apps__entry" onClick = {this.sendTo.bind(this, this.props.href)}>
-        <img className = "apps__entry__image" src = {this.props.image} alt = {this.props.imageAlt} />
+      <div
+        className = "apps__entry"
+        onClick = {this.sendTo.bind(this, this.props.href)}
+      >
+        <img
+          className = "apps__entry__image"
+          src = {this.props.image}
+          alt = {this.props.imageAlt}
+        />
       </div>
     );
   }

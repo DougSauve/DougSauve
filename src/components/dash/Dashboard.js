@@ -7,6 +7,8 @@ import sanitize from '../../../utils/sanitize';
 import { setBorderMarginHeight, setBorderMarginWidth } from '../../../utils/borderMargins';
 import { setPosts } from '../../redux/store';
 
+import DashboardForm from './DashboardForm';
+
 
 class Dashboard extends React.Component {
 
@@ -24,14 +26,6 @@ class Dashboard extends React.Component {
     document.getElementById('dash__post').style.width = setBorderMarginWidth(20);
     document.getElementById('dash__post').style.height = setBorderMarginHeight(20);
     document.getElementById('dash__posts').style.width = setBorderMarginWidth(20);
-
-    //add the submit button dynamically
-    const button = document.createElement('button');
-    const buttonText = document.createTextNode('submit');
-    button.appendChild(buttonText);
-    button.setAttribute("class", "dash__button dash__form__width");
-    button.addEventListener("click", this.handleSubmitPost);
-    document.getElementById('dash__post__form').appendChild(button);
   }
   componentDidUpdate () {
 
@@ -243,38 +237,11 @@ class Dashboard extends React.Component {
         id = "dash__post"
         className = "dash__frame__style dash__frame__positioning"
       >
-        <form
-          id = "dash__post__form"
-          method = "POST"
-        >
-          <p id = "dash__post__message">
-            {this.state.message}
-          </p>
 
-          <input
-            className = "dash__input dash__form__width"
-            type = "text"
-            name = "name"
-            placeholder = "post name"
-            autoFocus
-          />
-
-          <textarea
-            className = "dash__input dash__form__width"
-            rows = {3}
-            cols = {50}
-            name = "content"
-            placeholder = "blogity blog blog..."
-          />
-
-          <input
-            className = "dash__input dash__form__width"
-            type = "text"
-            name = "action"
-            placeholder = "action"
-          />
-
-        </form>
+        <DashboardForm
+          message = {this.state.message}
+          handleSubmitPost = {this.handleSubmitPost}
+        />
       </div>
     )
   }

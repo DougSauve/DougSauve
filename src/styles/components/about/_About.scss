@@ -1,0 +1,80 @@
+.about__page {
+  min-height: 100vh;
+  width: 100%;
+}
+.about__page__background {
+  position: fixed;
+  height: 100%;
+  min-height: 80rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.about__pane {
+  width: 75vw;
+  height: 100%;
+  background: rgba($cream, .5);
+}
+.about__item__text {
+  opacity: .9;
+  max-width: 80%;
+  background: $cream;
+  color: $dark;
+  font-size: 2rem;
+  border-radius: 3rem;
+  z-index: 1;
+  padding: 3rem;
+  margin: 9rem;
+}
+.NavBar-stripe {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 3.3rem;
+  background: lighten($dark, 10%);
+  z-index: 2;
+  width: 100%;
+  box-shadow: 0 0 2px $dark;
+}
+.align-left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.down__middle__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop::after {
+  content: "\a";
+  white-space: pre;
+}
+.heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: purple;
+}
+.sub-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: rgba($dark, .7);
+}
+.regular-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba($dark, 0.9);
+  line-height: 1.5;
+}
+b {
+  text-shadow: 0 0 1px lighten($dark, 10%);
+}
+.purple {
+  color: purple;
+}
+.horizontal-line {
+  border-top: solid black 2px;
+  width: 100%;
+}

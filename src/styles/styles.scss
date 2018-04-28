@@ -1,5 +1,6 @@
 @import './base/settings';
 @import './base/base';
+@import './base/colorShadowedTags';
 
 @import './components/NavBar';
 @import './components/Footer';
@@ -8,6 +9,8 @@
 @import './components/index/Slide';
 @import './components/index/Slideshow';
 @import './components/index/SlideSlot';
+
+@import './components/about/About';
 
 @import './components/apps/Apps';
 @import './components/apps/AppsDash';

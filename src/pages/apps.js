@@ -15,7 +15,7 @@ const Apps = () => (
         ['My work', '/app'],
         ['Contact', '/contact'],
         ['Blog', '/blog']]}
-      color = {'#112233'}
+      color = {'#334455'}
     />
     <AppDash
       appList = {appList}

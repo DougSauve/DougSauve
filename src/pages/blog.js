@@ -10,7 +10,7 @@ const Blog = () => (
   <div>
     <NavBar
       dests = {[['Home', '/'], ['About me', '/about'], ['My work', '/app'], ['Contact me', '/contact'], ['Blog', '/blog']]}
-      color = {'#112233'}
+      color = {'#334455'}
     />
     <BlogHeader />
     <BlogList />

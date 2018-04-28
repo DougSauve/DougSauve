@@ -1,0 +1,32 @@
+.red-shadowed {
+  color: red;
+  text-shadow: 0 0 1px darken(red, 10%);
+}
+.orange-shadowed {
+  color: darken(orange, 5%);
+  text-shadow: 0 0 1px darken(orange, 20%);
+}
+.green-shadowed {
+  color: green;
+  text-shadow: 0 0 1px darken(green, 10%);
+}
+.blue-shadowed {
+  color: #0044ff;
+  text-shadow: 0 0 1px lighten(#0044ff, 10%);
+}
+.purple-shadowed {
+  color: purple;
+  text-shadow: 0 0 1px darken(purple, 10%);
+}
+.pink-shadowed {
+  color: darken(pink, 20%);
+  text-shadow: 0 0 1px darken(pink, 40%);
+}
+.brown-shadowed {
+  color: #886622;
+  text-shadow: 0 0 1px #886622;
+}
+.silver-shadowed {
+ color: grey;
+ text-shadow: 0 0 1px grey;
+}

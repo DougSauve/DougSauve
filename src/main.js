@@ -6,6 +6,7 @@ import createStore from './redux/store';
 const store = createStore();
 
 import Index from './pages/index';
+import About from './pages/about'; 
 import Apps from './pages/apps';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
@@ -24,6 +25,7 @@ const app = document.getElementById('app');
 const Router = () => {
     switch (window.location.pathname) {
       case '/': return <Index />;
+      case '/about': return <About />;
       case '/app': return <Apps />;
       case '/blog': return <Blog />;
       case '/contact': return <Contact />;

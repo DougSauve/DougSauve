@@ -9,7 +9,7 @@
   background: transparent;
   line-height: $l-size;
   padding-right: 2px;
-  z-index: 2;
+  z-index: 3;
 }
 .current-location {
   display: inline-block;
@@ -21,6 +21,7 @@
 .button {
   color: $dark;
   font-size: 2rem;
+  font-weight: bold;
   max-height: 3rem;
   border-left: 1px solid $cream;
   box-shadow: 1px 0 4px $cream;
@@ -29,7 +30,6 @@
 }
 .button:hover {
   background: darken($cream, 10%);
-  font-weight: 500;
   cursor: pointer;
 }
 .nav-mobile-menu-icon {

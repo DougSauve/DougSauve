@@ -1,5 +1,5 @@
 #emailMe {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   display: flex;
@@ -8,6 +8,7 @@
 }
 #emailMe > img {
   position: fixed;
+  top: 0;
   z-index: -1;
   height: 100%;
   width: 100%;

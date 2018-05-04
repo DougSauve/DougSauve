@@ -1,7 +1,5 @@
 import React from 'react';
 
-import words from './words';
-
 export default class AboutIntro extends React.Component {
   render () {
     return (

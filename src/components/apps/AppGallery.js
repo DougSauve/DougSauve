@@ -18,7 +18,8 @@ export default class AppGallery extends React.Component {
           />
         })
       }
-        <Footer />
+
+      <Footer />
     </div>
     );
   }

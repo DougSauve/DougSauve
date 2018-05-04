@@ -18,7 +18,8 @@ export default class AppDash extends React.Component {
   setDescriptionByPosition = () => {
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     const viewHeight = window.innerHeight;
-    const position = Math.floor((scrollTop + (viewHeight / 2)) / viewHeight);
+    const entryHeight = viewHeight * .625;
+    const position = Math.floor( scrollTop / entryHeight + .5 );
 
     this.setState(() => ({
       title: this.props.appList[position].title,

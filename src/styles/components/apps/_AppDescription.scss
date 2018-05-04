@@ -11,19 +11,28 @@
   box-shadow: 0 2px 4px grey;
   border-radius: 2rem;
 
-  margin: 3rem;
+  margin: 1rem;
 }
 .App__Description__Title {
-  padding-bottom: .6rem;
-  margin-bottom: .6rem;
+  padding-bottom: .2rem;
+  margin-bottom: .2rem;
 
   text-align: center;
   color: $dark;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.5rem;
 
   border-bottom: solid 2px grey;
 }
-.App__Description__Content {
 
+@media (min-width: $desktop-breakpoint) {
+  .App__Description {
+    margin: 3rem;
+  }
+
+  .App__Description__Title {
+    padding-bottom: .6rem;
+    margin-bottom: .6rem;
+    font-size: 4rem;
+  }
 }

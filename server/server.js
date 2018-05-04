@@ -34,10 +34,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!!await db.readPost(sanitize(post.name))) {
+    if (!!await db.readPost(post.name)) {
       err = `There is already a blog post with the name ${post.name}. Please choose a different name.`;
     } else {
-      result = await db.createPost(sanitize(post.name), sanitize(post.content));
+      result = await db.createPost(post.name, post.content);
       console.log('created', result);
     }
     acknowledge(err, result);
@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.readPost(sanitize(name));
+    result = await db.readPost(name);
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
     console.log('read', result);
@@ -57,7 +57,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.readAllPosts(sanitize(name));
+    result = await db.readAllPosts(name);
 
     if (!result) err = `Could not find any blog posts.`;
     console.log('read', result);
@@ -67,10 +67,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!await db.readPost(sanitize(post.name))) {
+    if (!await db.readPost(post.name)) {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
-      result = await db.updatePost(sanitize(post.name), sanitize(post.content));
+      result = await db.updatePost(post.name, post.content);
       console.log('updated', result);
     }
     acknowledge(err, result);
@@ -79,10 +79,10 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    if (!await db.readPost(sanitize(post.name))) {
+    if (!await db.readPost(post.name)) {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
-      result = await db.updateName(sanitize(post.name), sanitize(post.content));
+      result = await db.updateName(post.name, post.content);
       console.log('updated name:', result);
     }
     acknowledge(err, result);
@@ -91,7 +91,7 @@ io.on('connection', (socket) => {
     let err;
     let result;
 
-    result = await db.deletePost(sanitize(name));
+    result = await db.deletePost(name);
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
     console.log('deleted', result);

@@ -1,0 +1,73 @@
+.red {
+  color: red;
+}
+.purple {
+  color: purple;
+}
+.light-purple {
+  color: lighten(purple, 10%);
+}
+.dark-purple {
+  color: darken(purple, 10%);
+}
+.blue {
+  color: blue;
+}
+.dark-blue {
+  color: #0000aa;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.dark-yellow {
+  color: darken(yellow, 25%);
+}
+.orange {
+  color: orange;
+}
+.brown {
+  color: #4D2B0F;
+}
+.pink {
+  color: darken(pink, 15%);
+}
+.light-pink {
+  color: pink;
+}
+.dark-pink {
+  color: #CF386A;
+}
+.white {
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+.grey {
+  color: grey;
+}
+.black {
+  color: black;
+}
+.black-shadow {
+  text-shadow: 0 0 4px black;
+}
+.grey-shadow {
+  text-shadow: 0 0 4px grey;
+}
+.white-shadow {
+  text-shadow: 0 0 4px white;
+}
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.code {
+  background: #ddd;
+  font-family: monospace;
+  font-weight: 500;
+}

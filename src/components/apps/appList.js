@@ -17,5 +17,11 @@ export default [
     imageAlt: "A screenshot of Doug Sauve's Fishing Game.",
     href: "/projects/FishingGame/app.html",
     description: "This is the third one. It's wonderful!"
+  }, {
+    title: "and One More Fishing Game",
+    image: "/images/FishingGame.png",
+    imageAlt: "A screenshot of Doug Sauve's Fishing Game.",
+    href: "/projects/FishingGame/app.html",
+    description: "This is the third one. It's wonderful!"
   }
 ];

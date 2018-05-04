@@ -19,17 +19,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: 1rem 0;
   background: white;
-  border-radius: 8rem;
+  border-radius: 2rem;
   box-shadow: 0 2px 4px grey;
 }
 #emailMe__contact__message {
   text-align: center;
   color: $dark;
   font-size: 2.6rem;
-  width: 50%;
-  margin: 3rem;
+  width: 75%;
+  margin: 1rem;
 }
 #emailMe__contact__button {
   background: purple;
@@ -39,7 +39,7 @@
   font-size:3rem;
   text-align: center;
   padding: 1rem;
-  margin-bottom: 12vh;
+  margin-bottom: 4vh;
 
   border-radius: 3rem;
   box-shadow: 0 2px 4px grey;
@@ -62,11 +62,25 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  img {
+    margin: 3rem;
+  }
+  img:hover {
+    cursor: pointer;
+  }
 }
 
-#emailMe__social-icons > img {
-  margin: 3rem;
-}
-#emailMe__social-icons > img:hover {
-  cursor: pointer;
+@media (min-width: $desktop-breakpoint) {
+  #emailMe__contact {
+    padding: 4rem 0;
+    border-radius: 8rem;
+  }
+  #emailMe__contact__message {
+    width: 50%;
+    margin: 3rem;
+  }
+  #emailMe__contact__button {
+    margin-bottom: 12vh;
+  }
 }

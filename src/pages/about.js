@@ -19,7 +19,7 @@ export default () => (
 
     <AboutIntro />
 
-    <Footer />
+    <Footer showToTop = {true} />
   </div>
 );
 

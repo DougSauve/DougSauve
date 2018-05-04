@@ -12,3 +12,11 @@
   font-size: 2rem;
   text-shadow: 0 0 2px white;
 }
+.back-to-top {
+  position: absolute;
+  bottom: 3rem;
+  justify-content: center;
+  a {
+    font-weight: bold;
+  }
+}

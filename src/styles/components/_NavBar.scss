@@ -1,4 +1,4 @@
-.nav-bar {
+#nav-bar {
   position: absolute;
   top: 0;
   right: 0;
@@ -32,15 +32,13 @@
   background: darken($cream, 10%);
   cursor: pointer;
 }
+//dynamic settings from js
 .nav-mobile-menu-icon {
   color: $cream;
   font-size: $l-size;
   padding-right: .6rem;
   text-align: right;
-}
-.nav-mobile-menu-icon:hover {
-  cursor: pointer;
-  color: darken($cream, 20%);
+  z-index: 3;
 }
 .nav-mobile-menu {
   display: none;
@@ -61,7 +59,7 @@
 }
 //for desktop
 @media (min-width: $desktop-breakpoint) {
-  .nav-bar {
+  #nav-bar {
     flex-direction: row;
   }
   .button {

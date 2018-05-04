@@ -3,7 +3,6 @@ import moment from 'moment';
 import { connect } from 'react-redux';
 const socket = io();
 
-import sanitize from '../../../utils/sanitize';
 import { setBorderMarginHeight, setBorderMarginWidth } from '../../../utils/borderMargins';
 import { setPosts } from '../../redux/store';
 
@@ -78,20 +77,20 @@ class Dashboard extends React.Component {
   handleSubmitPost = (e) => {
     e.preventDefault();
 
-    const action = sanitize(document.getElementById('dash__post__form').elements.action.value.trim().toLowerCase());
+    const action = document.getElementById('dash__post__form').elements.action.value.trim().toLowerCase();
 
     //error handling
     if (action === "") return this.setState(() => ({message: 'What should I do with this?', resetForm: false }));
     if(['create', 'read', 'read all', 'update', 'update name', 'delete', 'delete all', 'clear'].indexOf(action) < 0) return this.setState(() => ({message: 'Invalid command.', resetForm: false }));
 
-    const name = sanitize(document.getElementById('dash__post__form').elements.name.value);
-    const content = sanitize(document.getElementById('dash__post__form').elements.content.value);
+    const name = document.getElementById('dash__post__form').elements.name.value;
+    const content = document.getElementById('dash__post__form').elements.content.value;
 
     this.chooseAction(action, name, content);
   }
   chooseAction = (action, name, content) => {
 
-    switch (sanitize(action)) {
+    switch (action) {
 
       case 'create':
       if (!name || !content) return this.setState(() => ({message: 'You need a name and some content to create a post.', resetForm: false }));
@@ -133,9 +132,6 @@ class Dashboard extends React.Component {
     };
   }
   writeToDB = (name, content) => {
-    name = sanitize(name);
-    content = sanitize(content);
-
     socket.emit('createPost', { name, content }, (err, res) => {
       if (err) {
         this.setState(() => ({ message: err, resetForm: false }));

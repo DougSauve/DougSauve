@@ -1,12 +1,11 @@
 
-
 .apps__entry {
   position: relative;
-  height: 75vh;
+  height: 42.5vh;
   width: 95%;
   display: flex;
   justify-content: center;
-  margin-top: 25vh;
+  padding-top: 12.5vh;
 }
 .apps__entry__image {
   height: 100%;
@@ -19,4 +18,12 @@
   cursor: pointer;
   box-shadow: 0 4px 4px lighten(black, 5%);
   opacity: .95;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .apps__entry {
+    margin-top: 0;
+    //padding-top: 12.5vh;
+    height: 50vh;
+  }
 }

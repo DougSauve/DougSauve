@@ -15,7 +15,7 @@ const Blog = () => (
     <BlogHeader />
     <BlogList />
 
-    <Footer />
+    <Footer showToTop = {true} />
   </div>
 );
 

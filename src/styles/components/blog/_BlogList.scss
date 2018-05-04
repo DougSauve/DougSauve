@@ -1,59 +1,23 @@
-.BlogList__stripe {
+#BlogList__Stripe {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 5vw;
+  left: 2.5vw;
   border-left: solid white 1px;
   border-right: solid darken($cream, 50%) 5px;
   box-shadow: -1px 0 2px darken($cream, 50%), 1px 0 2px white;
 }
-#BlogList__post__container {
+#BlogList {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 
   color: $dark;
 }
-.BlogList__post {
-  display: absolute;
-  left: 0; right: 0;
-  margin: $s-size auto;
-  padding: $m-size;
-  width: 75vw;
-
-  background: white;
-  border-radius: $s-size;
-  box-shadow: 0 2px 4px grey;
-
-}
-.BlogList__post__titleBar {
-  display: flex;
-  justify-content: flex-end;
-  border-bottom: solid grey 2px;
-  margin-bottom: $l-size;
-}
-.BlogList__post__name {
-  flex-grow: 1;
-  color: darken(grey, 10%);
-  font-weight: 700;
-}
-.BlogList__post__timeStamp {
-  font-size: 1.6rem;
-}
-.BlogList__post__timeStamp-text{
-  color: $dark;
-  font-style: normal
-}
-.BlogList__post__createdAt {
-  opacity: .6;
-  font-style: italic;
-}
-.BlogList__post__editedAt {
-  opacity: .6;
-  font-style: italic;
-}
-.BlogList__post__content {
-  font-size: 2rem;
+@media (min-width: $desktop-breakpoint) {
+  #BlogList__Stripe {
+    left: 7vw;
+  }
 }

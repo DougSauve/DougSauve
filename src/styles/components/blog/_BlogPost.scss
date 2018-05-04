@@ -1,0 +1,52 @@
+.BlogPost {
+  display: absolute;
+  left: 0; right: 0;
+  margin: $s-size auto;
+  padding: $s-size;
+  width: 75vw;
+
+  background: white;
+  border-radius: $s-size;
+  box-shadow: 0 2px 4px grey;
+
+  color: rgba($dark, .8);
+  font-weight: bold;
+  line-height: 1.5;
+}
+.BlogPost__TitleBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: solid grey 2px;
+  margin-bottom: $l-size;
+}
+.BlogPost__Title {
+  flex-grow: 1;
+  font-size: 3rem;
+}
+.BlogPost__Timestamp {
+  font-size: 1.6rem;
+
+}
+.BlogPost__Timestamp__CreatedAt {
+  color: rgba($dark, .6);
+  font-style: italic;
+}
+.BlogPost__Timestamp__EditedAt {
+  color: rgba($dark, .6);
+  font-style: italic;
+}
+.BlogPost__Timestamp__EditedAt__Text{
+  color: rgba($dark, .6);
+  font-style: italic;
+  margin-right: .5rem;
+}
+.BlogPost__Content {
+  font-size: 2rem;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .BlogPost {
+    padding: $m-size;
+  }
+}

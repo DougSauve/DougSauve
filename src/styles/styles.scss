@@ -1,6 +1,7 @@
 @import './base/settings';
 @import './base/base';
 @import './base/colorShadowedTags';
+@import './base/BlogColorTags';
 
 @import './components/NavBar';
 @import './components/Footer';
@@ -15,12 +16,14 @@
 @import './components/apps/Apps';
 @import './components/apps/AppsDash';
 @import './components/apps/AppDashTitle';
+@import './components/apps/AppDashTitleMobile';
 @import './components/apps/AppDescription';
 @import './components/apps/AppGallery';
 @import './components/apps/AppsEntry';
 
 @import './components/blog/BlogHeader';
 @import './components/blog/BlogList';
+@import './components/blog/BlogPost';
 
 @import './components/contact/EmailMe';
 

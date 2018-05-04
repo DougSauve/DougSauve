@@ -17,7 +17,7 @@ class NavBar extends React.Component {
 
   componentDidMount() {
 
-    const buttons = document.getElementsByClassName('nav-bar')[0].childNodes;
+    const buttons = document.getElementById('nav-bar').childNodes;
 
     const color = this.props.color;
 
@@ -42,10 +42,10 @@ class NavBar extends React.Component {
     const button = document.getElementsByClassName('nav-mobile-menu-icon')[0];
     if (menu.style.display !== "block") {
       button.style.color = "#112233";
-      button.style.background = "#ffffcc";
+      button.style.background = "#faf7fa";
       menu.style.display = "block";
     } else {
-      button.style.color = "#ffffcc";
+      button.style.color = "#faf7fa";
       button.style.background = "transparent";
       menu.style.display = "none";
     }
@@ -91,7 +91,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className = "nav-bar">
+      <div id = "nav-bar">
         {this.chooseNavBarStyle()}
       </div>
     );

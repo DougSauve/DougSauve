@@ -1,8 +1,13 @@
 #App__Dash__Title {
   position: absolute;
-  display: block;
+  display: none;
   top: 0;
-  margin: 3rem auto;
-  font-size: 5rem;
+  margin: 1rem auto;
+  font-size: 3rem;
   font-weight: 700;
+}
+@media (min-width: $desktop-breakpoint) {
+  #App__Dash__Title {
+    display: block;
+  }
 }

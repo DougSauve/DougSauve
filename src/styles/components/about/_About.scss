@@ -1,43 +1,34 @@
 .about__page {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 .about__page__background {
+  opacity: .5;
   position: fixed;
   height: 100%;
   min-height: 80rem;
   width: 100%;
   z-index: -1;
 }
-
 .about__pane {
-  width: 75vw;
+  width: 95vw;
   height: 100%;
-  background: rgba($cream, .5);
+  padding-bottom: 2rem;
 }
 .about__item__text {
   opacity: .9;
-  max-width: 80%;
+  max-width: 100%;
   background: $cream;
   color: $dark;
   font-size: 2rem;
-  border-radius: 3rem;
+  border-radius: 2rem;
   z-index: 1;
-  padding: 3rem;
-  margin: 9rem;
+  padding: 1rem;
+  margin: 5rem 5% 5% 5%;
 }
-.NavBar-stripe {
-  position: absolute;
-  top: 0;
-  display: block;
-  height: 3.3rem;
-  background: lighten($dark, 10%);
-  z-index: 2;
-  width: 100%;
-  box-shadow: 0 0 2px $dark;
-}
+
 .align-left {
-  text-align: left;
+  text-align: center;
 }
 .center {
   text-align: center;
@@ -46,10 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.drop::after {
-  content: "\a";
-  white-space: pre;
 }
 .heading {
   font-weight: bold;
@@ -77,4 +64,34 @@ b {
 .horizontal-line {
   border-top: solid black 2px;
   width: 100%;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .about__page__background {
+    opacity: 1;
+  }
+  .about__pane {
+    width: 75vw;
+    background: rgba($cream, .5);
+    padding-bottom: 0;
+  }
+  .about__item__text {
+    border-radius: 3rem;
+    max-width: 80%;
+    padding: 3rem;
+    margin: 9rem;
+  }
+  .NavBar-stripe {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 3.3rem;
+    background: lighten($dark, 10%);
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0 0 2px $dark;
+  }
+  .align-left {
+    text-align: left;
+  }
 }

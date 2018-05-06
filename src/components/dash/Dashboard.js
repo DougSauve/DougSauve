@@ -8,7 +8,6 @@ import { setPosts } from '../../redux/store';
 
 import DashboardForm from './DashboardForm';
 
-
 class Dashboard extends React.Component {
 
   state = {
@@ -22,9 +21,19 @@ class Dashboard extends React.Component {
     });
 
     //border margin styling
-    document.getElementById('dash__post').style.width = setBorderMarginWidth(20);
-    document.getElementById('dash__post').style.height = setBorderMarginHeight(20);
-    document.getElementById('dash__posts').style.width = setBorderMarginWidth(20);
+    if (window.innerWidth < 450) {
+      //mobile
+      console.log('mobile');
+      document.getElementById('dash__post').style.width = setBorderMarginWidth(10);
+      document.getElementById('dash__post').style.height = setBorderMarginHeight(10);
+      document.getElementById('dash__posts').style.width = setBorderMarginWidth(10);
+    }else{
+      //desktop
+      console.log('desktop');
+      document.getElementById('dash__post').style.width = setBorderMarginWidth(20);
+      document.getElementById('dash__post').style.height = setBorderMarginHeight(20);
+      document.getElementById('dash__posts').style.width = setBorderMarginWidth(20);
+    }
   }
   componentDidUpdate () {
 

@@ -6,7 +6,7 @@ import createStore from './redux/store';
 const store = createStore();
 
 import Index from './pages/index';
-import About from './pages/about'; 
+import About from './pages/about';
 import Apps from './pages/apps';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
@@ -17,7 +17,7 @@ import Dash from './pages/dash.js'
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-console.log('PATHNAME: ', window.location.pathname);
+//console.log('PATHNAME: ', window.location.pathname);
 
 const app = document.getElementById('app');
 

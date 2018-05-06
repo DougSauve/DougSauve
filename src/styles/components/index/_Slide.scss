@@ -3,7 +3,7 @@
   background: white;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 3;
 }
 
 .slide__image {
@@ -11,6 +11,7 @@
   object-fit: cover;
   width: 100%;
   min-height: 100%;
+  z-index: 4;
 }
 // mobile
 .slide__caption {
@@ -29,6 +30,7 @@
   text-align: center;
   text-shadow: -2px 2px 2px $cream, 2px -2px 2px $cream, -2px -2px 2px $cream, 2px 2px 2px $cream;
   color: #112233;
+  z-index: 5;
 }
 
 .slide__caption__button {
@@ -42,6 +44,7 @@
   font-weight: 500;
   box-shadow: 0 2px 2px grey;
   margin: auto;
+  z-index: 6;
 }
 .slide__caption__button:hover {
   cursor: pointer;
@@ -51,6 +54,7 @@
 .chooser {
   display: flex;
   justify-content: center;
+  z-index: 6;
 }
 .chooser__button {
   color: transparent;
@@ -62,6 +66,7 @@
   text-shadow: none;
   opacity: .4;
   margin: 2rem .6rem;
+  z-index: 7;
 }
 .chooser__button:hover {
   cursor: pointer;

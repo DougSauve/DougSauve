@@ -49,7 +49,7 @@ export default class AboutIntro extends React.Component {
 
               Another skill that I've found essential is <b>figuring out what needs to be done and doing it</b>. I am a largely self-taught developer; that meant sailing my own ship from the very start. It's very empowering to set yourself a big task, and then work at it until the day you look back and realize you've accomplished it, and nobody else did it for you - even though it looked impossible when you started. Then you start to realize you can do anything you want to. The only thing you have to do is never give up.<br />
 
-              The last thing to mention is <b>learning</b>. I've heard that a generation of technology in software development is roughly 2.5 years. By then, pretty much everything I use today will be unrecognizeable. So if I decided to stop learning now, in 2.5 years or less my skills would be obsolete. This is envigorating to me - I have gotten bored at every job I've ever had, except this one. There is always something new to learn and I can always keep growing.
+              The last thing to mention is <b>learning</b>. I've heard that a generation of technology in software development is roughly 2.5 years. By then, pretty much everything I use today will be unrecognizeable. So if I decided to stop learning now, in 2.5 years or less my skills would be obsolete. This is invigorating to me - I have gotten bored at every job I've ever had, except this one. There is always something new to learn and I can always keep growing.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default class AboutIntro extends React.Component {
               What are my other goals?
             </p>
             <p className = "regular-text align-left">
-              <b>I want to create software that can improve the lives of people suffering from mental illnesses - especially teenagers.</b> Many people around me, including myself, suffer from mental illness, and I want so much to help, but most often I'm not in a position feel I can reach out on a personal level. But perhaps I can help people more effectively - and far more of them - through technology.<br />
+              <b>I want to create software that can improve the lives of people suffering from mental illnesses - especially teenagers.</b> Many people around me, including myself, suffer from mental illness, and I want so much to help, but most often I'm not in a position where I feel that I can reach out on a personal level. But perhaps I can help people more effectively - and far more of them - through technology.<br />
               My first goal is to create an app that can connect people who need someone to talk to with people who are willing to listen.
             </p>
           </div>

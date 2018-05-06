@@ -2,6 +2,7 @@ import React from 'react';
 
 class NavBar extends React.Component {
   sendTo(destination) {
+    if (!destination.endsWith('/')) destination.concat('/');
     window.location.href = destination;
   };
 
@@ -25,7 +26,7 @@ class NavBar extends React.Component {
       buttons.forEach((button) => {
         button.style.color = color;
         button.style.borderLeftColor = color;
-        button.style.boxShadow = "1px 0 4px " + color;
+        //button.style.boxShadow = "1px 0 4px " + color;
         button.onmouseenter = () => {
           button.style.color = "purple";
         };

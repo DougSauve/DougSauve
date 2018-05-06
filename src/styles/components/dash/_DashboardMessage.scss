@@ -1,0 +1,15 @@
+#dash__post__message {
+  position: relative;
+
+  left: 0; right: 0;
+  margin: 0 auto;
+  z-index: 1;
+
+  text-align: center;
+  width: 90%;
+}
+@media (min-width: $desktop-breakpoint) {
+  #dash__post__message {
+    width: 50%;
+  }
+}

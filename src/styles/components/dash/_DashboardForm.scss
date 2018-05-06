@@ -1,0 +1,73 @@
+#dash__post__form {
+  //margins set dynamically by javascript
+  position: absolute;
+  left: 0; right: 0;
+  margin: auto;
+  padding: 10vmin 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vmin;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  #dash__post__form {
+    width: 50%;
+    min-width: 28rem;
+
+    height: 60vmin;
+    min-height: 30rem;
+  }
+}
+
+.dash__form__width {
+  width: 100%;
+}
+.dash__frame__positioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+}
+.dash__frame__style {
+  text-align: center;
+
+  background: white;
+  color: $dark;
+
+  border-radius: $l-size;
+  box-shadow: 0 2px 4px grey;
+}
+.dash__input {
+  border-radius: $xxs-size;
+  width: 90%;
+  margin: .6rem auto;
+  background: $cream;
+  outline: none;
+}
+.dash__button {
+  border-radius: $xxs-size;
+  width: 90%;
+  margin: .6rem auto;
+  background: $dark;
+  color: white;
+  outline: none;
+}
+@media (min-width: $desktop-breakpoint) {
+  .dash__form__width {
+    width: 100%;
+  }
+  .dash__input {
+    margin: $xxs-size;
+  }
+  .dash__button {
+    margin: $xxs-size;
+  }
+}

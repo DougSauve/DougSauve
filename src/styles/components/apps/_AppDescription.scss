@@ -11,7 +11,9 @@
   box-shadow: 0 2px 4px grey;
   border-radius: 2rem;
 
+  height: 90%;
   margin: 1rem;
+  overflow: auto;
 }
 .App__Description__Title {
   padding-bottom: .2rem;
@@ -28,6 +30,7 @@
 @media (min-width: $desktop-breakpoint) {
   .App__Description {
     margin: 3rem;
+    height: auto;
   }
 
   .App__Description__Title {

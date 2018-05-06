@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/*', (req, res) => {
   req.url = sanitize(req.url);
-  console.log('going to GET', req.url);
+  //console.log('going to GET', req.url);
   if (!req.url.includes('.')) {
     req.url = '/';
   }
@@ -27,7 +27,7 @@ app.get('/*', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  console.log('server: connected.');
+  // console.log('server: connected.');
 
   socket.on('createPost', async (post, acknowledge) => {
 
@@ -38,7 +38,7 @@ io.on('connection', (socket) => {
       err = `There is already a blog post with the name ${post.name}. Please choose a different name.`;
     } else {
       result = await db.createPost(post.name, post.content);
-      console.log('created', result);
+      // console.log('created', result);
     }
     acknowledge(err, result);
 
@@ -50,7 +50,7 @@ io.on('connection', (socket) => {
     result = await db.readPost(name);
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
-    console.log('read', result);
+    // console.log('read', result);
     acknowledge(err, result);
   });
   socket.on('readAllPosts', async (name, acknowledge) => {
@@ -60,7 +60,7 @@ io.on('connection', (socket) => {
     result = await db.readAllPosts(name);
 
     if (!result) err = `Could not find any blog posts.`;
-    console.log('read', result);
+    // console.log('read', result);
     acknowledge(err, result);
   });
   socket.on('updatePost', async (post, acknowledge) => {
@@ -71,7 +71,7 @@ io.on('connection', (socket) => {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
       result = await db.updatePost(post.name, post.content);
-      console.log('updated', result);
+      // console.log('updated', result);
     }
     acknowledge(err, result);
   });
@@ -83,7 +83,7 @@ io.on('connection', (socket) => {
       err = `There is no blog post with the name ${post.name}.`;
     } else {
       result = await db.updateName(post.name, post.content);
-      console.log('updated name:', result);
+      // console.log('updated name:', result);
     }
     acknowledge(err, result);
   });
@@ -94,7 +94,7 @@ io.on('connection', (socket) => {
     result = await db.deletePost(name);
 
     if (!result) err = `Could not find a blog post with the name ${name}.`;
-    console.log('deleted', result);
+    // console.log('deleted', result);
     acknowledge(err, result);
   });
   socket.on('deleteAllPosts', async (password, acknowledge) => {
@@ -105,7 +105,7 @@ io.on('connection', (socket) => {
     if (result === true) {
        err = 'Incorrect password.';
     } else if (!result) err = `Could not find any blog posts.`;
-    console.log('deleted', result);
+    // console.log('deleted', result);
     acknowledge(err, result);
   });
 });

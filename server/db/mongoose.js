@@ -1,6 +1,6 @@
 const {MongoClient} = require('mongodb');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/DougSauveBlog');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/DougSauveBlog');
 
 module.exports = { mongoose };

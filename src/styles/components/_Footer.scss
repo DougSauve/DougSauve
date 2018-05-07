@@ -11,13 +11,25 @@
   width: 100%;
   font-size: 2rem;
   text-shadow: 0 0 2px white;
+  z-index: 5;
 }
 .back-to-top {
   position: absolute;
   bottom: 3rem;
   justify-content: center;
-  a {
-    font-weight: bold;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+  color: purple;
+  font-weight: bold;
+  background: lighten(purple, 50%);
+  border-radius: 2rem;
+  padding: .3rem $xs-size;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background: lighten(purple, 55%);
+}
+.footer__email__link {
+  color: blue;
+  text-decoration: underline;
+  margin-left: $s-size;
 }

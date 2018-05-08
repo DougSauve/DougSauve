@@ -12,10 +12,12 @@ import Contact from './pages/contact';
 import Blog from './pages/blog';
 import Maintenance from './pages/maintenance';
 import NotFound from './pages/notFound';
-import Dash from './pages/dash.js'
+import Dash from './pages/dash.js';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+
+//import SkillsMap from '../skillsMap/skillsMap';
 
 //console.log('PATHNAME: ', window.location.pathname);
 
@@ -41,5 +43,5 @@ const WrappedApp = () => (
     <Router />
   </Provider>
 );
-
+//ReactDOM.render(<SkillsMap />, app);
 ReactDOM.render(<WrappedApp />, app);

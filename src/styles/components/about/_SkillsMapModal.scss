@@ -1,0 +1,75 @@
+#skillsMap__modal {
+  display: none;
+  z-index: 10;
+
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+
+  background: rgba(grey, 0.7);
+}
+#skillsMap__description {
+  z-index: 12;
+
+  position: fixed;
+  top: 0; bottom: 90vh;
+  left: 0; right: 0;
+  margin: auto;
+
+  width: 80vw;
+  height: 3rem;
+  line-height: 3rem;
+  color: $dark;
+  background: $cream;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3rem;
+}
+#skillsMap__image {
+  z-index: 11;
+
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+
+  max-width: 100%;
+}
+#skillsMap__close__button {
+  z-index: 12;
+
+  position: fixed;
+  top: 90vh; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+
+  width: 80vw;
+  height: 3rem;
+  line-height: 3rem;
+  color: $dark;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: $cream;
+  border-radius: 3rem;
+  box-shadow: 0 2px 4px grey;
+}
+#skillsMap__close__button:hover {
+  cursor: pointer;
+  box-shadow: 0 0px 4px grey;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  #skillsMap__description {
+    width: 40vw;
+  }
+  #skillsMap__image {
+    max-height: 80vh;
+    width: auto;
+  }
+  #skillsMap__close__button {
+    width: 15vw;
+  }
+}

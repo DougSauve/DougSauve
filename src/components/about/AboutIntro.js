@@ -1,6 +1,16 @@
 import React from 'react';
 
+import SkillsMapModal from './SkillsMapModal';
+
 export default class AboutIntro extends React.Component {
+
+  showSkillsMap = () => {
+    document.getElementById('skillsMap__modal').style.display = "block";
+  }
+  hideSkillsMap = () => {
+    document.getElementById('skillsMap__modal').style.display = "none";
+  }
+
   render () {
     return (
       <div className = "about__intro down__middle__flex">
@@ -30,9 +40,16 @@ export default class AboutIntro extends React.Component {
               What technologies do I use?
             </p>
             <p className = "regular-text align-left">
-              You can find a current road map of my skills <b>Here</b>.
+              You can find a current map of my skills
+              <span
+                id = "skillsMap__link"
+                onClick = {this.showSkillsMap}
+              >
+                 Here
+              </span>
+              (last updated May 2018).
               I work primarily with the <b>MERN stack</b> (MongoDB, ExpressJS, ReactJS, NodeJS). MongoDB is a database, and Express, React and Node are JavaScript frameworks, so most of my work is done in JavaScript.<br />
-              I am also quite fond of CSS, the quirky language that powers the web's visual styles, and SCSS, a CSS extension which enables me to write simpler and more versatile CSS code.<br />
+              I am also quite fond of CSS, the quirky language that powers the web's visual styles, and SASS, a CSS extension which enables me to write simpler and more versatile CSS code.<br />
               I have used a handful of other technologies as well, such as PHP, Java, and SQL, but JavaScript is my main workshop for now, and it contains enough tools I haven't explored yet to keep me busy for a very long time!<br />
             </p>
           </div>
@@ -88,6 +105,7 @@ export default class AboutIntro extends React.Component {
             </p>
           </div>
         </div>
+        <SkillsMapModal hideSkillsMap = {this.hideSkillsMap} />}
       </div>
     );
   }

@@ -1,0 +1,171 @@
+#skillsMap{
+  height: 100vh;
+  width: 60vw;
+
+  display: flex;
+  align-items: stretch;
+  font-weight: bold;
+}
+#skillsMap__background {
+  height: 100%;
+  width: 60vw;
+  position: absolute;
+  opacity: .7;
+  z-index: -1;
+
+  background:-webkit-radial-gradient(ellipse farthest-corner at bottom left, rgb(122, 72, 159) 10%, rgb(217, 149, 108) 85%);
+  background:-o-radial-gradient(ellipse farthest-corner at bottom left, rgb(122, 72, 159) 10%, rgb(217, 149, 108) 85%);
+  background:-moz-radial-gradient(ellipse farthest-corner at bottom left, rgb(122, 72, 159) 10%, rgb(217, 149, 108) 85%);
+  background:radial-gradient(ellipse farthest-corner at bottom left, rgb(122, 72, 159) 10%, rgb(217, 149, 108) 85%);
+}
+#skillsMap__divider{
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: 55vh;
+  height: 0;
+  width: 58.5vw;
+  left: 1rem;
+  span {
+    margin-left: 10%;
+    color: lighten(black, 10%);
+    font-style: italic;
+    font-size: 1.6rem;
+  }
+  div {
+    border-top: 3px solid lighten(black, 10%);
+  }
+}
+
+#skillsMap__Ubuntu__border {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  flex-grow: 1;
+
+  padding: .5rem;
+  margin: .5rem;
+
+  border: 3px solid darken(orange, 13%);
+  span {
+    font-size: 3.5rem;
+  }
+  color: darken(orange, 13%);
+}
+#skillsMap__Webpack__border {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  flex-grow: 1;
+
+  padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 7%;
+
+  border: 3px solid blue;
+  padding: 1rem;
+  color: blue;
+  span {
+    font-size: 3.5rem;
+  }
+}
+#skillsMap__JavaScript__border {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  flex-grow: 1;
+
+  margin-left: 50%;
+
+  border: 3px solid yellow;
+  padding: 1rem;
+  color: yellow;
+
+  span {
+    padding-top: -1rem;
+    font-size: 7rem;
+  }
+}
+
+#skillsMap__HTML5 {
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  font-size: 3rem;
+
+  color: red;
+}
+#skillsMap__CSS3 {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+  font-size: 4rem;
+
+  color: darken(blue, 10%);
+}
+#skillsMap__SASS {
+  position: absolute;
+  top: 43vh;
+  left: 2vw;
+  font-size: 3.2rem;
+
+  color: pink;
+}
+#skillsMap__React {
+  position: absolute;
+  top: 36vh;
+  left: 31vw;
+  font-size: 5.5rem;
+
+  color: lighten(blue, 10%);
+}
+#skillsMap__Redux {
+  position: absolute;
+  top: 48vh;
+  left: 37vw;
+  font-size: 4rem;
+
+  color: purple;
+}
+
+#skillsMap__Express {
+  position: absolute;
+  top: 65vh;
+  left: 36vw;
+  font-size: 3rem;
+
+  color: darken(grey, 20%);
+}
+#skillsMap__Node {
+  position: absolute;
+  top: 77vh;
+  left: 33vw;
+  font-size: 4.5rem;
+
+  color: darken(green, 10%);
+}
+#skillsMap__MongoDB {
+  position: absolute;
+  top: 91vh;
+  left: 24vw;
+  font-size: 3rem;
+
+  color: lighten(green, 9%);
+  text-shadow: 0 0 2px black;
+}
+.skillsMap__description {
+  margin: -.5rem 0;
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+.skillsMap__description--mongodb {
+  margin: -.5rem 0;
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: darken(green, 20%);
+}

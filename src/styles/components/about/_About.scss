@@ -26,6 +26,14 @@
   padding: 1rem;
   margin: 5rem 5% 5% 5%;
 }
+#skillsMap__link{
+  color: blue;
+  font-weight: bold;
+  padding: 0 .3rem;
+}
+#skillsMap__link:hover{
+  cursor: pointer;
+}
 
 .align-left {
   text-align: center;

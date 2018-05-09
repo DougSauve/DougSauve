@@ -14,11 +14,15 @@
 
   text-shadow: 0 0 3px $cream;
 }
-// for desktop
 @media (min-width: $desktop-breakpoint) {
-  .index__header {
-    margin: $xl-size 0 0 20%;
+  // for mobile landscape
 
-    font-size: 3.4rem;
+  @media (min-height: 400px) {
+    // for desktop
+    .index__header {
+      margin: $xl-size 0 0 20%;
+
+      font-size: 3.4rem;
+    }
   }
 }

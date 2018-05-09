@@ -11,14 +11,22 @@
   background: lighten($cream, 5%);
 }
 @media (min-width: $desktop-breakpoint) {
+  //mobile landscape
   .app__gallery {
     padding-top: 12.5vh;
     padding-bottom: 25vh;
 
     box-shadow: 0 0 4px grey;
-    
+
     z-index: 1;
     right: 0;
-    width: 67%;
+    width: 60%;
+  }
+
+  @media (min-height: 400px) {
+    //desktop
+    .app__gallery {
+      width: 67%;
+    }
   }
 }

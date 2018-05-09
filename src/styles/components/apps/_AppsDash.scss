@@ -14,12 +14,22 @@
   box-shadow: 0 0 4px grey;
 }
 @media (min-width: $desktop-breakpoint) {
+  // mobile landscape
   #apps__dash {
-    z-index: -1;
     top: 0;
     left: 0;
+    z-index: -1;
+
     height: 100vh;
-    width: 33%;
+    width: 40%;
+
     box-shadow: none;
+  }
+
+  @media (min-height: 400px) {
+    // desktop
+    #apps__dash {
+      width: 33%;
+    }
   }
 }

@@ -5,24 +5,3 @@
     box-shadow: 0 2px 4px grey;
   }
 }
-
-#apps__header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7rem;
-}
-#apps__header__background {
-
-
-  height: 35rem;
-  width: 95vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#apps__header__title {
-  color: $dark;
-  font-size: 5rem;
-}

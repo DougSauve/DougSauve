@@ -53,7 +53,7 @@ class NavBar extends React.Component {
   }
 
   chooseNavBarStyle() {
-    { if (window.innerWidth <= 450) {
+    { if ((window.innerWidth <= 450)||(innerHeight <= 450)) {
         //for mobile
         return <div className = "nav-mobile-menu-icon"
           onClick = {this.toggleDisplayMobileMenu}

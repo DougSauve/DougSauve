@@ -28,14 +28,22 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  //mobile landscape
   .App__Description {
-    margin: 3rem;
-    height: auto;
+    margin: .5rem;
   }
 
-  .App__Description__Title {
-    padding-bottom: .6rem;
-    margin-bottom: .6rem;
-    font-size: 4rem;
+  @media (min-height: 400px){
+    //desktop
+    .App__Description {
+      margin: 3rem;
+      height: auto;
+    }
+
+    .App__Description__Title {
+      padding-bottom: .6rem;
+      margin-bottom: .6rem;
+      font-size: 4rem;
+    }
   }
 }

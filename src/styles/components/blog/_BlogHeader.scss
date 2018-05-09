@@ -51,6 +51,7 @@
   height: 8rem;
   width: 8rem;
   border: $cream solid 1px;
+  margin-right: $xs-size;
 }
 #Blog__Header__Introduction-text {
   flex: 1 1 auto;
@@ -75,10 +76,10 @@
     width: 85%;
   }
   #Blog__Header__Introduction {
-    width: 60%;
+    width: 58%;
   }
   #Blog__Header__Description {
-    width: 40%;
+    width: 42%;
     border-top: none;
     padding-top: 0;
     margin-top: 0;

@@ -13,9 +13,7 @@ export default (props) => (
        <span
          className = "footer__email__link"
          onClick = {() => {window.location.href = "mailto:DougSauve4.200@gmail.com"}}
-        >
-          DougSauve4.200@gmail.com
-        </span>
+        >DougSauve4.200@gmail.com</span>
     </div>
 
     {(props.showToTop) && <div

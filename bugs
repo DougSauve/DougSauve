@@ -1,11 +1,19 @@
 True Mobile:
-Footer / back-to-top button are aligned left instead of center
-spacing is not sufficient for footer on mobile
-bottom line of footer needs to be split on mobile
+Footer / back-to-top button are aligned left instead of center x
+spacing is not sufficient for footer on mobile x
+bottom line of footer needs to be split on mobile x
 
-slideshow is still not displaying
+slideshow is still not displaying x NAILED THAT
 
 dash form displays far too low on true mobile
 
 also need to create the skills map. x
 Need to remake the image: add descriptions to the skills map. x
+
+
+Final tweaks:
+
+Rework media queries to handle phone flipped sideways - is there a setting where it zooms in from regular phone style?
+resize things on main page
+publish blog post
+make dash form display properly on mobile

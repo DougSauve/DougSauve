@@ -81,32 +81,46 @@ b {
   background: rgba($cream, .5);
   z-index: 4;
 }
+
 @media (min-width: $desktop-breakpoint) {
-  .about__page__background {
-    opacity: 1;
-  }
+  //mobile-landscape
   .about__pane {
-    width: 75vw;
-    background: rgba($cream, .5);
-    padding-bottom: 0;
+    width: 90%;
   }
   .about__item__text {
-    border-radius: 3rem;
-    max-width: 80%;
-    padding: 3rem;
-    margin: 9rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 1rem;
   }
-  .NavBar-stripe {
-    position: absolute;
-    top: 0;
-    display: block;
-    height: 3.3rem;
-    background: lighten($dark, 10%);
-    z-index: 2;
-    width: 100%;
-    box-shadow: 0 0 2px $dark;
-  }
-  .align-left {
-    text-align: left;
+
+  @media (min-height: 400px) {
+    //desktop
+    .about__page__background {
+      opacity: 1;
+    }
+    .about__pane {
+      width: 75vw;
+      background: rgba($cream, .5);
+      padding-bottom: 0;
+    }
+    .about__item__text {
+      border-radius: 3rem;
+      max-width: 80%;
+      padding: 3rem;
+      margin: 9rem;
+    }
+    .NavBar-stripe {
+      position: absolute;
+      top: 0;
+      display: block;
+      height: 3.3rem;
+      background: lighten($dark, 10%);
+      z-index: 2;
+      width: 100%;
+      box-shadow: 0 0 2px $dark;
+    }
+    .align-left {
+      text-align: left;
+    }
   }
 }

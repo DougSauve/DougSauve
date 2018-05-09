@@ -21,7 +21,7 @@
   background: $cream;
   border-radius: 2rem;
   padding: .3rem $xs-size;
-  width: 75vw;
+  width: 74vw;
   box-shadow: 0 2px 4px grey;
   margin: 1rem auto;
 }
@@ -38,12 +38,16 @@
   cursor: pointer;
   color: lighten(blue, 5%);
 }
-
 @media (min-width: $desktop-breakpoint) {
-  .footer {
-    font-size: 2rem;
-  }
-  .back-to-top {
-    width: 10vw;
+//mobile-landscape
+
+  @media (min-height: 400px) {
+    //desktop
+    .footer {
+      font-size: 2rem;
+    }
+    .back-to-top {
+      width: 10vw;
+    }
   }
 }

@@ -68,6 +68,9 @@
   margin-top: $xs-size;
   text-wrap: wrap;
 }
+.space-to-left {
+  margin-left: .4rem;
+}
 
 @media (min-width: $desktop-breakpoint) {
   // mobile landscape

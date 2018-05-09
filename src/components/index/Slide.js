@@ -12,14 +12,11 @@ export default class Slide extends React.Component {
       return this.props.desktopImage;
     }
   }
-  componentDidMount() {
-    console.log('slide mounted');
-  }
 
   render() {
     return (
       <div className = "slide">
-
+        <div> SLIDE loaded</div>
         <img className = "slide__image" src = {this.chooseImage()}></img>
         <div className = "slide__caption"
           onMouseEnter = {() => {

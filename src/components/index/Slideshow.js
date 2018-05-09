@@ -29,11 +29,11 @@ export default class Slideshow extends React.Component {
           if (this.count < maxCount) this.count++;
           if (this.count === maxCount) this.count = 0;
 
-          this.setState((prevState) => ({
+          this.setState(() => ({
             slide2: this.state.slide1
           }));
           setTimeout(() => {
-            this.setState((prevState) => ({
+            this.setState(() => ({
               slide1: this.slides[this.count]
             }));
           }, 2000);
@@ -62,7 +62,6 @@ export default class Slideshow extends React.Component {
   }
 
   componentDidMount() {
-    console.log('slideshow mounted');
     document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = `url(${this.props.slides[0][0]})`;
     // create the array of slides:
     this.props.slides.map((slide, index) => {
@@ -103,7 +102,6 @@ export default class Slideshow extends React.Component {
   render() {
     return (
       <div className = "slideshow">
-        <div id = "himom">HI MOM</div>
         {/* this is only needed so the first image doesn't appear to fade in. */}
         <div className = "slideshow__background" />
         <SlideSlot

@@ -2,8 +2,8 @@ import React from 'react';
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-
 import AboutIntro from '../components/about/AboutIntro';
+import orientation from '../../utils/getOrientation';
 
 export default () => (
   <div className = "about__page">
@@ -20,6 +20,7 @@ export default () => (
     <AboutIntro />
 
     <Footer showToTop = {true} />
+    {(orientation() === 'mobile') && <div id = "About__Footer__Background" />}
   </div>
 );
 

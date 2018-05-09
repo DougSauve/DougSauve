@@ -1,5 +1,7 @@
 import React from 'react';
 
+import orientation from '../../utils/getOrientation';
+
 export default (props) => (
   <div className = "footer">
 
@@ -12,6 +14,8 @@ export default (props) => (
 
     <div id = "footer__copyright">
        {'Created by Doug Sauve'} &#0169; {new Date().getFullYear()}
+
+       {(orientation() === 'mobile') && <br />}
        <span
          className = "footer__email__link"
          onClick = {() => {window.location.href = "mailto:DougSauve4.200@gmail.com"}}

@@ -105,7 +105,7 @@ export default class AboutIntro extends React.Component {
             </p>
           </div>
         </div>
-        <SkillsMapModal hideSkillsMap = {this.hideSkillsMap} />}
+        <SkillsMapModal hideSkillsMap = {this.hideSkillsMap} />
       </div>
     );
   }

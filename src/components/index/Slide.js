@@ -16,7 +16,6 @@ export default class Slide extends React.Component {
   render() {
     return (
       <div className = "slide">
-        <div> SLIDE loaded</div>
         <img className = "slide__image" src = {this.chooseImage()}></img>
         <div className = "slide__caption"
           onMouseEnter = {() => {

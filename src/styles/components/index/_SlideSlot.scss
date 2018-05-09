@@ -1,7 +1,12 @@
+// #slot1, #slot2 {
+//   position: absolute;
+//   opacity: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: 2;
+// }
+
 #slot1, #slot2 {
-  position: absolute;
-  opacity: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
+  position: fixed;
+  left: 0;
 }

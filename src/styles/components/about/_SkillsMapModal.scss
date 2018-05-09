@@ -19,6 +19,7 @@
 
   width: 80vw;
   line-height: 3rem;
+  height: 6rem;
   color: $dark;
   background: $cream;
   font-size: 2rem;
@@ -62,6 +63,9 @@
 
 @media (min-width: $desktop-breakpoint) {
   // mobile landscape
+  #skillsMap__description {
+    height: 3rem;
+  }
   #skillsMap__image {
     max-height: 80vh;
     width: auto;

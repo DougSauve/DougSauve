@@ -10,8 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "dev": "webpack-dev-server --mode development --watch",
-    "build": "webpack --config webpack.config.js",
-    "postinstall": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "postinstall": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,8 @@
     "socket.io": "^2.1.0",
     "style-loader": "^0.20.3",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "webpack-merge": "^4.1.2"
   },
   "devDependencies": {}
 }

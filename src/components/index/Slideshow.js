@@ -102,8 +102,9 @@ export default class Slideshow extends React.Component {
   render() {
     return (
       <div className = "slideshow">
-        <div className = "slideshow__background">
-        </div>
+
+        {/* this is only needed so the first image doesn't appear to fade in. */}
+        <div className = "slideshow__background" />
         <SlideSlot
           slide = {this.state.slide2}
           slotName = "slot2"

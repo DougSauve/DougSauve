@@ -39,6 +39,7 @@ export default class SlideSlot extends React.Component {
   render() {
     return (
       <div id = {this.props.slotName}>
+        <div id = "shouter">HI MOM</div>
         {this.props.slide}
       </div>
     )

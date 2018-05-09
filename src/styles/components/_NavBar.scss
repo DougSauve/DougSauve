@@ -59,19 +59,21 @@
 }
 //for desktop
 @media (min-width: $desktop-breakpoint) {
-  #nav-bar {
-    flex-direction: row;
-  }
-  .button {
-    color: $cream;
-    font-size: 2rem;
-    border-left: 1px solid $cream;
-    box-shadow: 1px 0 4px $cream;
-    background: transparent;
-    padding: 0 $xs-size;
-  }
-  .button:hover {
-    background: rgba(250,250,250,.1);
-    color: purple;
+  @media (min-height: 400px) {
+    #nav-bar {
+      flex-direction: row;
+    }
+    .button {
+      color: $cream;
+      font-size: 2rem;
+      border-left: 1px solid $cream;
+      box-shadow: 1px 0 4px $cream;
+      background: transparent;
+      padding: 0 $xs-size;
+    }
+    .button:hover {
+      background: rgba(250,250,250,.1);
+      color: purple;
+    }
   }
 }

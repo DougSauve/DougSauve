@@ -4,12 +4,21 @@ import SkillsMapModal from './SkillsMapModal';
 
 export default class AboutIntro extends React.Component {
 
+  scrollTop;
+
   showSkillsMap = () => {
     document.getElementById('skillsMap__modal').style.display = "block";
+    this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    document.addEventListener('scroll', this.freezePage);
   }
   hideSkillsMap = () => {
     document.getElementById('skillsMap__modal').style.display = "none";
+    document.removeEventListener('scroll', this.freezePage);
   }
+  freezePage = () => {
+    document.documentElement.scrollTop = this.scrollTop;
+    document.body.scrollTop = this.scrollTop;
+  };
 
   render () {
     return (

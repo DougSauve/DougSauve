@@ -71,6 +71,9 @@
 
 @media (min-width: $desktop-breakpoint) {
   // mobile landscape
+  #Blog__Header__Contents {
+    flex-direction: row;
+  }
   #Blog__Header__Introduction {
     width: 50%;
   }

@@ -8,6 +8,7 @@
 }
 #emailMe > img {
   position: fixed;
+  left: 0;
   top: 0;
   z-index: -1;
   height: 100%;
@@ -32,14 +33,16 @@
   margin: 1rem;
 }
 #emailMe__contact__button {
-  background: purple;
+  margin-bottom: 4vh;
+
   width: 15rem;
-  opacity: .7;
-  color: white;
-  font-size:3rem;
   text-align: center;
   padding: 1rem;
-  margin-bottom: 4vh;
+  opacity: .7;
+
+  background: purple;
+  color: white;
+  font-size: 3rem;
 
   border-radius: 3rem;
   box-shadow: 0 2px 4px grey;
@@ -76,6 +79,10 @@
   #emailMe__contact__message {
     font-size: 2rem;
     width: 90%;
+  }
+  #emailMe__contact__button {
+    font-size: 2.4rem;
+    padding: .8rem;
   }
   #emailMe__social-message {
     margin: .5rem;

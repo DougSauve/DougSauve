@@ -36,6 +36,7 @@ export default class Password extends React.Component {
           method = "POST"
         >
           <input
+            id = "dash__password__input"
             className = "dash__input"
             type = "text"
             name = "password"

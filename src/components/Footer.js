@@ -8,7 +8,7 @@ export default (props) => (
     <div id = "footer__copyright">
        {'Created by Doug Sauve'} &#0169; {new Date().getFullYear()}
 
-       {(window.innerHeight > window.inerWidth) && <br />}
+       {(window.innerHeight > window.innerWidth) && <br />}
 
        <span
          className = "footer__email__link"

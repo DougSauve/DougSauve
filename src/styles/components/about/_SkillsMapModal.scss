@@ -62,14 +62,19 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
-  #skillsMap__description {
-    width: 40vw;
-  }
+  // mobile landscape
   #skillsMap__image {
     max-height: 80vh;
     width: auto;
   }
   #skillsMap__close__button {
     width: 15vw;
+  }
+
+  @media (min-height: 400px) {
+    //desktop
+    #skillsMap__description {
+      width: 40vw;
+    }
   }
 }

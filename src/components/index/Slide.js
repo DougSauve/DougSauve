@@ -17,7 +17,8 @@ export default class Slide extends React.Component {
     return (
       <div className = "slide">
         <img className = "slide__image" src = {this.chooseImage()}></img>
-        <div className = "slide__caption"
+
+        <div className = "slide__box"
           onMouseEnter = {() => {
             this.props.pausingSlideshow();
           }}
@@ -25,14 +26,21 @@ export default class Slide extends React.Component {
             this.props.unpausingSlideshow();
             setTimeout(this.props.changeSlide, 0);
           }}
-          >
-          <p>{this.props.caption}</p>
-            <br />
+        >
+          {/* caption */}
+          <p className = "slide__box__caption">
+            {this.props.caption}
+          </p>
+
+          <br />
+          {/* button */}
           <div
-            className = "slide__caption__button"
+            className = "slide__box__button"
             onClick = {this.sendTo.bind(this, this.props.buttonHref)}
           >
-            <span>{this.props.buttonText}</span>
+            <span>
+              {this.props.buttonText}
+            </span>
           </div>
 
           {/* slide chooser */}
@@ -44,12 +52,12 @@ export default class Slide extends React.Component {
                     key = {index}
                     className = "chooser__button"
                     onClick = {this.props.goToSlide.bind(this, index)}
-                    >
-                      o
+                  >
+                    o
                   </div>
-                  );
-                })
-              }
+                );
+              })
+            }
           </div>
 
         </div>

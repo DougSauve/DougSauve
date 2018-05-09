@@ -62,6 +62,7 @@ export default class Slideshow extends React.Component {
   }
 
   componentDidMount() {
+    console.log('slideshow mounted');
     document.getElementsByClassName('slideshow__background')[0].style.backgroundImage = `url(${this.props.slides[0][0]})`;
     // create the array of slides:
     this.props.slides.map((slide, index) => {
@@ -102,7 +103,7 @@ export default class Slideshow extends React.Component {
   render() {
     return (
       <div className = "slideshow">
-
+        <div id = "himom">HI MOM</div>
         {/* this is only needed so the first image doesn't appear to fade in. */}
         <div className = "slideshow__background" />
         <SlideSlot

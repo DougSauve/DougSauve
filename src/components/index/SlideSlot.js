@@ -4,14 +4,18 @@ export default class SlideSlot extends React.Component {
 
   state = {
     fadeIn: undefined,
-    shouldUpdate: undefined
+    shouldUpdate: false
   }
 
+  componentDidMount() {
+    console.log('slideslot mounted');
+  }
   componentWillReceiveProps(nextProps) {
     if (this.props.slide === nextProps.slide) {
       this.setState(() => ({ shouldUpdate: false }));
     }
     else {
+      console.log(`shouldUpdate: ${this.state.shouldUpdate}`);
       this.setState(() => ({ shouldUpdate: true }));
     }
   }
@@ -39,7 +43,6 @@ export default class SlideSlot extends React.Component {
   render() {
     return (
       <div id = {this.props.slotName}>
-        <div id = "shouter">HI MOM</div>
         {this.props.slide}
       </div>
     )

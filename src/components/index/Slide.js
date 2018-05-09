@@ -12,6 +12,9 @@ export default class Slide extends React.Component {
       return this.props.desktopImage;
     }
   }
+  componentDidMount() {
+    console.log('slide mounted');
+  }
 
   render() {
     return (

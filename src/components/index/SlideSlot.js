@@ -2,38 +2,38 @@ import React from 'react';
 
 export default class SlideSlot extends React.Component {
 
-  //variables
-  fadeIn;
-  shouldUpdate;
-
-  shouldComponentUpdate() {
-    return this.shouldUpdate;
+  state = {
+    fadeIn: undefined,
+    shouldUpdate: undefined
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.slide === nextProps.slide) {
-      this.shouldUpdate = false;
+      this.setState(() => ({ shouldUpdate: false }));
     }
     else {
-      this.shouldUpdate = true;
+      this.setState(() => ({ shouldUpdate: true }));
     }
+  }
+  shouldComponentUpdate() {
+    return this.state.shouldUpdate;
+  }
+  componentWillUpdate() {
+    clearInterval(this.state.fadeIn);
+    document.getElementById(this.props.slotName).style.opacity = 0;
   }
   componentDidUpdate() {
     const slot =  document.getElementById(this.props.slotName);
 
     let c = 1;
-    this.fadeIn = setInterval(() => {
-      if (c <= 20) {
-        slot.style.opacity = c / 20;
-        c++;
-      } else {clearInterval(this.fadeIn)};
-    }, 50);
-
-  }
-  componentWillUpdate() {
-    clearInterval(this.fadeIn);
-
-    document.getElementById(this.props.slotName).style.opacity = 0;
+    this.setState(() => ({
+      fadeIn: setInterval(() => {
+        if (c <= 20) {
+          slot.style.opacity = c / 20;
+          c++;
+        } else {clearInterval(this.state.fadeIn)};
+      }, 50)
+    }));
   }
 
   render() {

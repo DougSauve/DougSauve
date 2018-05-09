@@ -58,17 +58,23 @@
   outline: none;
 }
 @media (min-width: $desktop-breakpoint) {
+  //mobile landscape
   .dash__form__width {
     width: 100%;
-  }
-  .dash__frame__style {
-    border-radius: $l-size;
-    box-shadow: 0 2px 4px grey;
   }
   .dash__input {
     margin: $xxs-size;
   }
   .dash__button {
     margin: $xxs-size;
+  }
+
+  @media (min-height: 400px) {
+  //desktop
+    .dash__frame__style {
+      background: $cream;
+      border-radius: $l-size;
+      box-shadow: 0 2px 4px grey;
+    }
   }
 }

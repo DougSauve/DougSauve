@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "./Bounce-Page.css">
+    <link rel = "stylesheet" type = "text/css" href = "./Bounce-Game.css">
+  </head>
+
+  <body>
+    <div id = "Page-Frame">
+
+      <div id = "Game-Frame">
+        <div id = "Title">Bounce</div>
+
+        <div id = "Game-Container">
+          <div id = "Ball"></div>
+          <div id = "Goal">
+            <div id = "Goal-Number"></div>
+          </div>
+          <div id = "Wall0"></div>
+          <div id = "Wall1"></div>
+          <div id = "Wall2"></div>
+          <div id = "Wall3"></div>
+        </div>
+      </div>
+
+      <div id = "Rules-Frame">
+        <div id = "Instructions" class = "rules-style">
+          Instructions: Get your ball to the numbered target. There are 10 targets per level.
+        </div>
+        <div id = "Controls" class = "rules-style">
+          Controls: Press 'up' to start, 'left' to build a vertical wall, and 'right' to build a horizontal wall.
+        </div>
+
+        <div id = "Level" class = "rules-style"></div>
+        <button id = "reset-button" class = "rules-style" onClick = "reset()">Reset Level</button>
+      </div>
+
+    </div>
+    <script src = "utils.js"></script>
+    <script src = "./Bounce-Levels.js"></script>
+    <script src = "Bounce.js"></script>
+
+  </body>
+</html>

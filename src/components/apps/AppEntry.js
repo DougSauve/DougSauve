@@ -2,7 +2,12 @@ import React from 'react';
 
 export default class AppEntry extends React.Component {
   sendTo(destination) {
-    window.location.pathname = destination;
+
+    if (destination.includes('http')) {
+      window.location.href = destination;
+    } else {
+      window.location.pathname = destination;
+    };
   };
 
   render () {
@@ -20,3 +25,5 @@ export default class AppEntry extends React.Component {
     );
   }
 }
+
+// 162.255.119.158

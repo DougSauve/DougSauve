@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './_SkillsMap.scss';
+
 export default () => (
   <div id = "skillsMap">
   <div id = "skillsMap__background" />

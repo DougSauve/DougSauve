@@ -1,5 +1,10 @@
 export default [
-  {
+  { title: "LastMinute",
+    image: "/images/LastMinute.png",
+    imageAlt: "The events page of the Last Minute app, showing an event about tennis and one for a barbecue in the park.",
+    href: "https://safe-falls-58465.herokuapp.com/",
+    description: "LastMinute's goal is to bring spontaneity back into people's social lives. Quickly set up and join informal events - everything takes place within 24 hours!"
+  }, {
     title: "DougSauve.com",
     image: "/images/DougSauve.png",
     imageAlt: "A conch shell at the water's edge on a beach is one of the slides on the main page of DougSauve.com",

@@ -66,7 +66,7 @@ export default class AboutIntro extends React.Component {
               (last updated July 2018). <br />
               I work primarily with the <b>MERN stack</b> (MongoDB, ExpressJS, ReactJS, NodeJS). MongoDB is database software, and Express, React and Node are JavaScript frameworks, so most of my work is done in JavaScript.<br />
               I am also fond of CSS, the quirky language that powers the web's visual styles, and SASS, an awesome CSS extension which enables me to write simpler and more versatile CSS code.<br />
-              I have used a handful of other technologies as well, such as PHP, Java, and SQL, but JavaScript is my main workshop for now, and it contains enough tools I haven't explored yet to keep me busy for a very long time!<br />
+              I have used a handful of other technologies as well, such as PHP, Java, and SQL. JavaScript is my main workshop for now, and it contains enough tools I haven't explored yet to keep me busy for a very long time!<br />
             </p>
           </div>
 

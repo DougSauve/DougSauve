@@ -36,8 +36,9 @@
 
   b {
     color: darken($cream, 15%);
-  }
-}
+    text-shadow: 0 0 2px black;
+  };
+};
 #Blog__Header__Introduction {
   flex: 0 1 auto;
   display: flex;

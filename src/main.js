@@ -12,7 +12,7 @@ import Contact from './pages/contact';
 import Blog from './pages/blog';
 import Maintenance from './pages/maintenance';
 import NotFound from './pages/notFound';
-import Dash from './pages/dash.js';
+import Dash from './pages/dash';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';

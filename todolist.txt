@@ -1,0 +1,69 @@
+get all tests passing X
+
+deploy to heroku X
+
+hook up mLabs X
+
+test on true mobile and desktop. X
+
+A/P - /events attendingEvents is aligned left.  X
+D - homeLocations x shouldn't wrap on its own X
+L - headers shouldn't be fixed. Takes up way too much of the screen. X
+Should use current homeLocation when creating an event if it cannot determine location X
+I6 - P orientation modal not styled properly X
+
+I5 - nothing showing up. - label as known issue for now. X
+bundle.js 52114 sytax error unexpected let in strict mode
+
+
+
+
+
+update DougSauve.com:
+
+ https X
+ meta description X
+ app list link X
+ skills map X
+ about me X
+ add blurb about last-minute - what I learned especially (see below) - maybe add a link to my progresslog instead?
+ debrief about lastminute X
+
+
+ link to progresslog in plain text X
+ update blog page wording X
+ fix blog post order X
+ 
+update age ranges in LastMinute
+update meet at safe place in LastMinute
+update linkedin, gitHub, stackoverflow
+update resume
+
+
+research interview stuff
+
+
+(later)
+convert LM to a PWA & require payment for account
+get thelastminuteapp.com and point it to heroku
+
+
+
+My thoughts after finishing LastMinute:
+
+That took Way longer than I thought it was going to. I did a good job and I'm proud of it, but I am too new to this to have a real concept of how long project will take just yet.
+
+
+What I did well:
+It looks really good. I'm glad I stuck with one color and made it as simple as possible.
+
+What I would do differently:
+Use BEM CSS more strictly. One class per element, and then use SASS extensions to use extend/inheritance to my classes. That way everything stays more organized and there is only one place to look for things, with clear paths to anything external from there.
+*Use forms with buttons the regular way. I moved all of my buttons out of my forms so that there is no way to submit them, thinking that this will improve security. I don't know if this is effective or not, but between this and using my own implementation of modals I probably lost 1-2 weeks of time. When I get involved with more experienced devs this would be something to ask them about, but for now, keep it more mainstream.
+*Use react-modal. And probably react-router while I'm at it. I lost a ton of time on my own modals and it made for very messy implementation of modals. And my code suffered for it as well. I'm not confident that my homemade client-side routing isn't messing with iOS users.
+See if there's a way to speed up Webpack. Waiting 40s for it to compile is a huge time drain. I'd rather have 5 or 7s if possible.
+"use strict" - I forgot through the whole project
+
+Blurb:
+
+LastMinute's goal is to bring spontaneity back into people's social lives. Quickly set up and join informal events - everything take place within 24 hours!

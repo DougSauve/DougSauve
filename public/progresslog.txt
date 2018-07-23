@@ -1,0 +1,488 @@
+Below is the unfancy log that I have kept each week of my progress since mid-March, 2018.
+
+~~~Week of Mar 10 - 16, 2018~~~
+
+Reading:
+I have finished the first 4 sections of The Complete Software Developer's Guide by John Sonmez. Only one to go, but may wait until it's more applicable to me.
+
+React:
+Learned how to use state, stateless functional components, and default props
+
+Node:
+Learned to use Mongoose and Postman
+Learned CRUD via Mongoose
+Learned to write REST APIs
+Learned to write async tests for Mocha that query APIs
+Deployed an API to Heroku
+Learned to use 3 environments - production, development, and testing
+
+
+~~~Week of Mar 17-23~~~
+
+Node:
+Learned to hash passwords
+Learned JWT and creating tokens
+Learned to create user accounts and authenticate
+Learned how to use web sockets (socket.io) - emitting, listening for, and broadcasting events
+Used Mocha to write a full test suite for the API (including user accounts)
+
+Projects:
+Finished building a node API for a to-do list
+Built a React app that uses state to add user input to a <p> tag, and deletes it with another button.
+Built a Node app that allows chat in real time and can share the user's geolocation
+
+Networking:
+Got LinkedIn profile completed, joined three JavaScript groups and followed a few organizations/individuals.
+
+
+~~~Week of Mar 24-30~~~
+
+JavaScript:
+Learned to use localStorage
+
+Node:
+Learned to create socket.io rooms
+Learned async/await
+
+React:
+Learned to use Lifecycle methods for components
+Learned to use Webpack 4
+Learned to use React-modal
+
+Networking:
+Subscribed to Medium.com, began reading articles daily
+
+Accomplishments:
+Finished The Complete Node Developer - 2nd edition by Andrew Mead in 29 days (Mar 26+/-1)
+
+Plans:
+Finish the 8th module in the React course - styling in React     :)
+Begin working seriously on DougSauve.com, using Node and React   :)
+
+~~~Week of Mar 31 - Apr 6~~~
+
+React:
+Learned to style React
+Learned to use scss
+Learned to configure WebPack to precompile scss
+
+Projects:
+Built the landing page at DougSauve.com (took about 15 hours over 3 days, but lots of this was learning)
+Built a number of reusable components at DougSauve.com
+Built the /apps page at DougSauve.com
+set up my own client-side router, but it has issues with Heroku...
+Deployed DougSauve.com to the web
+
+Plans:
+Troubleshoot my personal router, switch to react-router if necessary (may do this anyway for simplicity's sake) x
+Implement slideshow transitions x
+Implement a slide-chooser like on iPhone screens x
+Attend NodeMN meetup on Tuesday: ask why Heroku renders the images incorrectly and why it doesn't play nice with my router x Nailed it!!! :D
+Make DougSauve.com responsive-designed (x for mobile in FF, issues with Chrome and on an actual phone. :/ this might take a while)
+Learn react-router
+Learn redux
+
+Notes: It feels really good to dig into a real-life project again and 'get my hands dirty'. Theoretical learning is cool, but applying it is where the real learning happens. I'm feeling really good about dealing with Dr. Benham's website too - most of my stuff should be reusable there.
+
+~~~Week of Apr 7 - 13~~~
+
+Projects:
+	DougSauve.com
+Implemented slideshow transitions (probably via reinventing the wheel)
+Implemented a slide-chooser
+Created my own client-side router and covered edge cases, so all pages render properly
+Set up serving regular HTML for The Fishing Game
+Styled DougSauve.com
+Made it Firefox and Chrome friendly - not sure about Apple-friendly yet...
+
+React:
+Became a lot more familar with it through working on DougSauve.com
+Learned the theory of the basics of Redux
+Started learning react-router
+
+Networking:
+Attended Node meetup, won't go again
+Met Jon, suggested working on an exercises app together
+
+Reading:
+Read a lot of articles on Medium, LinkedIn and HackerNoon
+Feel quite a bit more confident with UX/UI
+
+Plans:
+Learn Redux
+Begin working on Expensify
+If possible, build out the API and get the blog at DougSauve.com working x
+
+Notes:
+I got a little discouraged this week, partly because the slideshow took me three days to figure out and partly because I don't feel like I have a lot to show for this week. I'm also realizing that I'm not as close to ready as I thought - I still need to figure out how to do client/server communication, and not knowing Redux is standing in the way of a lot of things I want to do. I really want to be building my portfolio right now but I think I still have more learning to do before that - at least the Redux section. I think I'm still going to need another 2-4 weeks of learning before I can really attack my portfolio.
+Reactifying the Fishing Game is looking daunting, as well. I'm basically going to have the rewrite the whole thing. I might do better to simply rework the styling and code and leave it as a LAMP app, and move on to new things. I might have to do the same with OWF and CW.
+I think I need a deeper understanding of CSS, too. It doesn't feel tricky but it's really costing me a lot of time - especially since Webpack has slowed recompiling down so badly. I might look into running Babel and Sass manually if it will make things run more quickly.
+That all said, I'm really excited to get into new things. I want to start building games. I don't think that's going to be a great option for me just yet, but I'm still excited about it. I'm getting really interested in AR/VR too - I think those are going to be the future of programming and I want to see how easy it will be to get my hands into it.
+
+~~~Week of Apr 14-20~~~
+
+Projects:
+Got the blog working at DougSauve.com:
+ Set up a local database with Mongoose
+ Set up a websocket-based API to CRUD with the database, including error handling and draft handling
+ Created a password-protected dashboard page to manage blog posts with
+ Created the /blog page at DougSauve.com
+ Set the /blog page to read all non-draft posts
+Created the /contact page
+ Added an 'email me' button and icon links to my LinkedIn and GitHub pages
+Styled the whole DougSauve.com site
+Began redesigning the /apps page to be more engaging
+
+React:
+Learned most of the basics of Redux
+Completed the part of Expensify that I wanted to make
+
+Plans for next week:
+Finish learning Redux x
+Add a parser for my own style tags in blog posts (didn't, won't right now)
+Write a data sanitizer and implement it everywhere x
+Rewrite the DougSauve.com code to use Redux where necessary x
+Refactor the /dash page (and others if necessary) to be in multiple files and cleaner x
+
+Mid-term plans:
+Begin pumping out my portfolio - get at least 2 MERN projects looking really good and in GitHub / on DougSauve.com
+ Dr. B's website
+ An app - past weather? The Fishing Game?
+Write a resume and start applying to jobs
+Learn Jest
+Learn React Native
+Explore React-Modal in more depth, learn React-pose
+
+Notes: I want to move very quickly now and start applying to jobs. They're coming out in force in Jeff City and Columbia, and I so want to apply to some, but if I do now I'll have nothing to show them. I want to prove that I can write good, clean code and build complete apps, and that I work quickly and effectively. I want to have this happening by the 2nd week of May if possible. The jobs going up now won't expire by then, and there will probably be others up too.
+
+~~~Week of Apr 21-27~~~
+
+Projects:
+ Implemented Redux across DougSauve.com
+ Wrote a data sanitizer and implemented it
+ Wrote an 'about' page, styled it and added content
+ Continued redesigning the apps page
+ Added a data sanitizer to DougSauve.com
+
+React:
+Finished learning redux
+
+Plans for next week:
+Get on the lowest plans at Heroku and GitHub
+Finish DougSauve.com: x
+ Finish redesigning the /apps page: x
+  rework spacing between gallery items x
+  rework mobile design of gallery x
+  reword about page - top section and PWAs instead of React Native x
+ Finish responsifying the /blog page x
+ Create a blog parser x (stupid thing)
+ Blog Post x
+Deploy the site :) x
+
+Troubleshoot slideshow button issue on iPhones
+Troubleshoot slideshow button issue on Firefox x
+Learn to use Create-React-App
+
+Mid-term plans
+Get 3 MERN apps up and in the gallery on DougSauve.com:
+HelpMe
+Dr B's website
+Exercises / something else
+
+Non-urgent plans:
+clean up CSS selectors on DougSauve.com
+clean up the parser
+de-hackify the location indicator on the NavBar
+learn more about SASS capabilities
+begin learning React Native
+
+Notes: I don't know if I'm going to have things up quite as quickly as I'd like. I think it's going to take most of next week to get my site up, and I was hoping to be done by the weekend after that; if I still can be that would be amazing, but I don't think I'll be quite there by then. I'm going to focus first on HelpMe, then see what comes after that. Hopefully I can get that one up fairly easily - it shouldn't require a db or anything, and I can likely make everything work using websockets. I'll need to plan that out.
+
+
+~~~Week of Apr 28 - May 4~~~
+
+Projects:
+ Responsifed DougSauve.com
+ Deployed DougSauve.com
+ Wrote a first blog post; requires editing
+ Reworked the /apps page for mobile
+ Wrote a parser for my own style tags to be used in blog posts that are sanitized against most programming characters; put the idea aside as
+  it's getting too big and isn't relevant
+
+Learning:
+ Began learning what PWAs are, whether they are better for me to learn than React Native; still haven't decided but leaning toward PWAs
+ Learned more in-depth about closures and IIFEs
+ Getting much more familiar with React
+
+Plans for next week:
+
+ Sign up to GitHub and Heroku paid plans x
+ Finish DougSauve.com x Finished May 9 - 5 weeks.
+  connect mlabs, environment variables x
+  optimize site for production x
+  remove all console.logs x
+  set all links to end with / to prevent double server calls x
+  remove shadow on mobile navbar icon x
+  learn about dynos and their cost x
+
+  /index slideshow not displaying at all on true mobile - might be a z-index issue? navbar is there, just invisible. x
+  /about create and connect skills map x
+  /about back to top displaying incorrectly on true mobile x
+  /dash add blog post x
+  /dash not optimized for mobile x
+ Begin working on HelpMe x
+ Come up with a 2nd app idea
+ Decide whether to use PWAs or React Native for HelpMe x
+ Use Create-React-App x
+
+Notes: I'm getting a little discouraged again. I think it's because Ariana thought my blog post sounded creepy and I thought it was so good - that and that there are so many issues with DougSauve.com right now and I just want to get it up and move on.
+I think I have to remind myself to look back more often, to see what I've done and how far I've come and how quickly I have moved. It isn't quite 5 months since I've started programming. 5 months ago, I knew the basics of PHP and Java and some basic HTML. I didn't know what an object was. I knew that JavaScript could do mouseover and alert, and that was all. I had never heard of a framework. I didn't know why PHP needed a server to run.
+In 5 months, I learned enough JavaScript that my learning level is now usually called advanced. I learned HTML and CSS and ReactJS and NodeJS, and learned my way through ExpressJS and the basics of MongoDB - the whole MERN stack. I created a full website using that stack - including websockets and a homemade slideshow with transitions. I'm getting good with functional programming. I can use geolocation and weather and any other API. I know how to use SQL. I have so many marketable skills, and I learned them all so fast and very solidly. I can understand and reason about how to build a huge range of stuff - from a word processor to mobile apps to games to tons of other stuff.
+I think I just need to be patient and allow myself a bit more time. I'm getting stressed out because I'm not meeting the deadlines I set for myself - but honestly, this is my first time really working deeply through an app start-to-finish - of course I'm not going to know everything yet. But I will in time. I just need to allow myself more time.
+Don't set a time limit on things yet. Just work until I'm ready - however much time that takes. Be good at what I do.
+
+~~~Week of May 5 - 11~~~
+
+Projects:
+
+finished DougSauve.com (see last week for details)
+restyled Bounce and added it to the /apps gallery
+planned out HelpMe fairly extensively on paper/text editor
+
+Learning:
+Learned basic theory of React Native
+
+Plans:
+Figure out what to build next and build it. :) Preferably something that will look really nice in a portfolio and be buildable this weekend.
+I'm not going to reach into mobile for now - I might be able to with PWAs but I need something to show for my time right now.
+
+Notes:
+I'm not going to be able to work with React Native with my current setup. It needs my phone and computer to be on the same network, but my phone provides the network so that's not possible. If I can get a second device that might work. Also, the Android Developer thing can't download an SDK, so I can't get an Android virtual machine to work with. I'm starting to feel the need for a mac and normal wifi.
+So... at the moment, I might be able to keep going with PWAs - but I'm not sure if I'll be able to get them onto mobile with my current setup.
+:\ looks like I've hit a bit of a ceiling here.
+So, that means I need to create something else. HelpMe is a great idea, but it will have to wait. For now I'll have to make something else.
+I could work on Benham's website, or do something else.
+I would love to make a game, but I don't know if a game is a great portfolio piece. Especially considering I already have one on there.
+What else? ... maybe I'll browse through APIs and come up with something.
+
+~~~Week of May 12-18~~~ LastMinute hour count: 28:10
+
+Projects:
+
+Planned out LastMinute on paper - UI views, database models
+Set up crud ops
+Built redux store
+Created user input modals
+Created the create/update form and started on form validation and error handling
+Implemented reusable submit and cancel buttons
+Created and use a Capitalize /utils module
+
+
+Learning:
+Experimented with a new React directory structure - better, but I'm not quite satisfied with it
+Got a Lot more familiar with Redux - I feel comfortable with it now
+Learned redux mapDispatchToProps
+Learned HTML5 input types, and saved So much work with these
+Learned a little more of MomentJS
+Very basics of Jest
+Researched common CSS interview questions - I'm better than I thought with CSS, but I do want to learn Grid!
+
+
+
+
+Plans:
+ LastMinute:
+  need to get /profile page working
+  geolocation
+  auto-clean the database
+  users and validation
+  add a 'view user profile' modal to /index
+  make new events show up in real time
+
+Notes:
+This was a busy week and I didn't have much time to get things done beyond the weekend. :/ Next week should be better. I don't think I'll be finished LastMinute by then, but hopefully I'll have geolocation, auto-cleaning, and the profile page done. I'm guessing 2-3 weeks yet to finish the app and make it a PWA. Maybe I can make June 8th my goal.
+
+~~~Week of May 19-25~~~ (to 26 really)  33:00
+
+Projects:
+ LastMinute:
+  got /events basically functional
+  Created and validated the create/update form and its error handling
+  Used MomentJS to manage time tracking
+  Reworked /event modal to use 4 slides instead of one
+  Set up google maps in slide 3
+  Began working on getting the browser geolocation object working
+
+
+Learning:
+ Google Cloud Console (frustrating to navigate)
+ Google Maps API for vanilla JavaScript
+ Google Maps API and geocoding for React
+ React 3rd-party components and libraries for google maps
+
+ React refs
+ Importing a redux store
+ Creating an input that is in sync with redux state
+
+Notes:
+ I've gotten pretty frustrated with using Google Maps in React over the past few days. I figured out everything I needed to eventually but it was a real pain. If I had to learn it again I would probably use vanilla JavaScript in an iFrame or something to deal with maps. But I guess I know it now.
+ I also got pretty annoyed that the geolocation object in the browser is so unreliable. I didn't realize what it was at first and couldn't figure out what I was doing. But I created a fallback for it and it works well, though I'd prefer it if it wasn't necessary. I think knowing how to use google maps in react is going to serve me well, though - there are a lot of great apps to be made with geolocation! :)
+ I think I've got most of the tricky/unknown stuff out of the way now. Most of what I still have to do should be review, and I'm feeling good for now about being done by June 8th - though I don't think I have any time to slack off! :)
+
+~~~Week of May 26 - June 1~~~ (from 27 really) 23:45
+
+Projects:
+ LastMinute:
+  Got sign up and log in working. If a user is not logged in and accesses another page it redirects them to the main page.
+  Got the choose location slide working correctly - address bar and map now update each other when one is changed (though the bar takes a button click to make it less spammy).
+  Got the user model and backend up and running
+  Profile page shows user info and allows update email, password and age range via buttons
+  User and myEvent are persisted across pages through a session using websockets and variables on the server
+  Each event in /index has a button that can be clicked to show details, including an option to join/unjoin events
+
+Learning:
+ Sockets - one client-side socket per project to communicate
+ Redux - doesn't persist across pages on its own. Use server or localStorage to take care of this.
+ NodeMailer - didn't end up using it but did get it working
+
+
+Notes:
+ I'm not sure if I really need authentication via headers and x-auth since I've got it basically doing the same thing through the userReducer/user, but I'm going to add it anyway. A little extra security never hurts.
+  I love how quickly a second similar operation goes up in a project compared to the first one. Events took me weeks to set up in the db, and users took me a few hours.
+Didn't have as much time as I would have liked since this was Jeana's graduation weekend with family around a lot.
+
+
+~~~Week of June 2 - 8~~~ 17:45
+Projects:
+ LastMinute:
+  Reorganized join/unjoin and got them functioning reliably
+  Began creating a test suite
+
+Learning:
+ Deeper understanding of what async/await can and can't do
+ Deeper understanding of Promises, Promise.all
+ How valuable a testing suite is - I've lost so much time because I don't have one
+ The value of a linter - I've lost a lot of time here as well
+ Models in mongoose can be a royal pain. I validate all of my data before I get to the database and it just becomes a nuisance to make the models perfect as well. I'll probably use straight mongodb next time. *Edit: I've learned that Mongoose does a bunch of optimization, so maybe not. :(
+ Need for organization is paramount. All of the things that I feel I can get away without for a while need to be there. Coding first and thinking later is very expensive - stop doing it, no matter how much time I think it wastes.
+
+Notes:
+Next time, I want Jest working and I'm going to use it constantly. I want confidence, and I want a way to check my code without waiting 20 seconds for it to compile. Having webpack do hot reloading wouldn't be bad either. I wish it wasn't so slow.
+Away for 4 days in Missouri this weekend, nothing done then.
+
+~~~Week of June 9 - 15~~~ 23:00
+
+Projects:
+ LastMinute:
+  Finished the back-end test suite, for db calls and sockets.
+
+Learning:
+ Practice with Jest, async testing, promises, and Jest with SocketIO
+
+Notes:
+I plan to apply to jobs within a week or so. I have the back end completely set up, so now all I have to do is wire the front end to it (in theory). Hopefully this won't take long - setting everything to syntax that I have changed could take quite a while - it might be faster to simply rewrite some parts.
+Once that's done, I can integrate homeLocations and meetingPlaces and have them display in the appropriate places, then I only have my distance calculations... I'll see how long this will take - I may want to wait on this and other things.
+Styling needs to happen this week, and updating DougSauve.com as well.
+Lots to do - we'll see if I make it! :)
+
+~~~Week of June 16 - 22~~~ 43:30
+
+Projects:
+ LastMinute:
+  Worked way too much:
+  Troubleshot bugs that came up from changing the backend
+  Wired up meetingPlaces
+  Styled all main pages and some modals, including base styles
+  Created keyboard bindings for closing modals and submitting forms
+
+Learning:
+ Coding over 40 hours in a week is bad for a relationship and general health, at least it takes place in spare time.
+ Creating base style classes and reusing them is efficient, organized, and awesome.
+ Building things right the first time, instead of moving quickly, saves so much time. Use a test suite during development.
+
+Notes:
+Job applications not happening yet.
+
+~~~Week of Jun 23 - 29~~~ 22:00
+
+Projects:
+ LastMinute:
+  Styled the rest of the app
+  Got hosted and attending events updating on the user
+  Modularized join/unjoin and DeleteEventModal
+  Created view and set maps, integrated them across /events and /index
+
+Learning:
+ Started theory of CSS Grid
+
+
+~~~Week of June 30 - July 6~~~ 23:45
+
+Projects:
+ LastMinute:
+  Got homeLocations wired up and styled
+  Got distance calculation working
+  Got search preferences up and running
+  General functionality fixes - making sure updated and deleted events transfer to attendees' version of the event as well
+  General bug fixes
+
+Learning:
+ Read overview of the basics of JavaScript. I have most of it but am weak on the object-oriented things, like __proto__ and call/apply. I don't use them much and probably don't have any need to since I don't really use OOP.
+ I think I'm seeing CSS Flexbox's limitations - places where I should be using Grid. /events boxes especially.
+
+Notes:
+ Functionality and styling for desktop working completely.
+ On to styling for mobile, hashing and authentication, and limiting age range changes. Then I should be good to go! :)
+
+
+~~~Week of July 7 - 13~~~ 33:45
+
+Projects:
+ LastMinute:
+  Salt/hash passwords
+  Made buttons unspammable
+  Get enter/escape key binding working for all pages and modals
+  Add removeMeetingPlaces functionality
+  Repair deleteEvents and deleteProfile
+  Responsive styling across app
+
+Learning:
+Add border-box to all sub-elements of body in CSS reset
+Use react-modal and regular forms - this probably cost me two-three weeks' worth of extra work
+In CSS, make base elements extendable and call them in individualized class selectors, using straight BEM. Having 3-4 classes on an element is going to be stupid to maintain.
+Learned better how to salt/hash passwords, got a better understanding of all that
+
+Notes:
+Should finish within the next week.
+
+
+
+~~~Week of July 14 - 20~~~ 16:15
+
+LastMinute v1.0.0 finished July 16. Total time 2 months, 2 days / 9 weeks / 265 hours (about 30-hour work weeks).
+
+Projects:
+ LastMinute:
+  Finished responsive styling
+  Hunted down a whole ton of small bugs, styling and displaying of error messages mostly
+  Added removal of expired events
+  Added logging of a user's past events
+  Covered edge cases for when a button is clicked leading to a just-expired event
+  Deployed app
+  Find mobile-specific bugs and fix - narrowed down the issue on iOS to bundle.js not being loaded
+
+ DougSauve:
+  Add HTTPS
+
+Learning / reflections on LastMinute creation process
+Use BEM CSS more strictly. One class per element, and then use SASS extensions to use extend/inheritance to my classes. That way everything stays more organized and there is only one place to look for things, with clear paths to anything external from there.
+*Use forms with buttons the regular way. I moved all of my buttons out of my forms so that there is no way to submit them, thinking that this will improve security. I don't know if this is effective or not, but between this and using my own implementation of modals I probably lost 1-2 weeks of time. When I get involved with more experienced devs this would be something to ask them about, but for now, keep it more mainstream.
+*Use react-modal. And probably react-router while I'm at it. I lost a ton of time on my own modals and it made for very messy implementation of modals. And my code suffered for it as well. I'm not confident that my homemade client-side routing isn't messing with iOS users.
+See if there's a way to speed up Webpack. Waiting 40s for it to compile is a huge time drain. I'd rather have 5 or 7s if possible.
+"use strict" - I forgot through the whole project.
+Look into a linter that only runs when you ask it to - it's a great tool but often it distracts me more than it helps, and I don't use one for that reason.
+
+Notes:
+It's finally finished!! Woot! :)
+Now I need to (hopefully) fix the iOS/Webpack issue, update DougSauve.com, linkedIn, stackoverflow, GitHub and my resume....
+...and apply to jobs! :)

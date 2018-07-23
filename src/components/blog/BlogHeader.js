@@ -14,7 +14,7 @@ const BlogHeader = () => (
       </div>
       <div id = "Blog__Header__Description">
         I write about <b>User Interface and Experience</b>,
-        <b className = "space-to-left">Life Lessons I learn as a developer</b>,
+        <b className = "space-to-left">Easy ways to look at concepts</b>,
         and the occasional post about <b>Max the cat</b>.
       </div>
     </div>

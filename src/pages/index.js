@@ -1,5 +1,7 @@
 import React from 'react';
 
+import createSlides from '../components/index/createSlides';
+
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
@@ -19,28 +21,10 @@ const Index = () => (
       ]}
     />
     <Slideshow
-      slides = {[
-        [
-          [
-            './images/1.jpg', './images/1-mobile.jpg'],
-            'Curious about what I can do?',
-            'Check out my work',
-            './app'
-          ], [
-            './images/2.jpg',
-            'Want my help with a project?',
-            'Get in touch',
-            './contact'
-          ], [
-            './images/3.jpg',
-            'See what\'s new on my blog.',
-            'Go',
-            './blog'
-          ],
-        ]}
-      />
+      slides = {createSlides}
+    />
 
-      <Footer />
+    <Footer />
   </div>
 );
 

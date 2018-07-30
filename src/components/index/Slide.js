@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default class Slide extends React.Component {
+
   sendTo = (destination) => {
     window.location.href = this.props.buttonHref;
   }
@@ -16,7 +17,7 @@ export default class Slide extends React.Component {
   render() {
     return (
       <div className = "slide">
-        <img className = "slide__image" src = {this.chooseImage()}></img>
+        {this.chooseImage()}
 
         <div className = "slide__box"
           onMouseEnter = {() => {

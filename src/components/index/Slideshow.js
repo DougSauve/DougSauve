@@ -69,7 +69,8 @@ export default class Slideshow extends React.Component {
       // check if there is a mobile image to display
       let desktopImage;
       let mobileImage;
-      if (typeof this.props.slides[index][0] === 'object') {
+
+      if (this.props.slides[index][0][1]) {
         desktopImage = this.props.slides[index][0][0];
         mobileImage = this.props.slides[index][0][1];
       } else {
